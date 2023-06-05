@@ -1,0 +1,46 @@
+[22-03-2023 08:29:42] ERROR: cargarFunciones.php - linea: 2309 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_N...' at line 15 - SQL: SELECT * FROM
+    CuotaPersona
+    INNER JOIN Lectivo 
+        ON (Cuo_Lec_ID = Lec_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Cuo_Niv_ID = Niv_ID)
+    INNER JOIN CuotaTipo 
+        ON (Cuo_CTi_ID = CTi_ID)
+    INNER JOIN CuotaAlternativa 
+        ON (Cuo_Alt_ID = Alt_ID)
+    INNER JOIN CuotaBeneficio 
+        ON (Cuo_Ben_ID = Ben_ID)
+    INNER JOIN Usuario 
+        ON (Cuo_Usu_ID = Usu_ID)
+WHERE (Cuo_Lec_ID =  AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_Numero=);
+[22-03-2023 09:48:32] ERROR: cargarFunciones.php - linea: 2309 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_N...' at line 15 - SQL: SELECT * FROM
+    CuotaPersona
+    INNER JOIN Lectivo 
+        ON (Cuo_Lec_ID = Lec_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Cuo_Niv_ID = Niv_ID)
+    INNER JOIN CuotaTipo 
+        ON (Cuo_CTi_ID = CTi_ID)
+    INNER JOIN CuotaAlternativa 
+        ON (Cuo_Alt_ID = Alt_ID)
+    INNER JOIN CuotaBeneficio 
+        ON (Cuo_Ben_ID = Ben_ID)
+    INNER JOIN Usuario 
+        ON (Cuo_Usu_ID = Usu_ID)
+WHERE (Cuo_Lec_ID =  AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_Numero=);
+[22-03-2023 14:39:08] ERROR: funciones_generales.php - linea: 1171 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 - SQL: SELECT
+	Con_Lec_ID
+    , Lectivo.Lec_Nombre
+    , Configuracion.Con_Uni_ID FROM
+    Configuracion
+    INNER JOIN Lectivo 
+        ON (Configuracion.Con_Lec_ID = Lectivo.Lec_ID) WHERE Con_Uni_ID = ;
+[22-03-2023 14:39:09] ERROR: cargarAlumnosCurso.php - linea: 24 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY  Ins_Niv_ID, Ins_Cur_ID, Ins_Div_ID' at line 9 - SQL: SELECT DISTINCTROW Ins_Niv_ID, Ins_Cur_ID, Ins_Div_ID, Niv_Nombre, Cur_Nombre, Div_Nombre FROM Curso
+    INNER JOIN Colegio_Inscripcion 
+        ON (Curso.Cur_ID = Colegio_Inscripcion.Ins_Cur_ID) AND (Curso.Cur_Niv_ID = Colegio_Inscripcion.Ins_Niv_ID) 
+	INNER JOIN Colegio_Nivel 
+        ON (Curso.Cur_Niv_ID = Niv_ID)
+    INNER JOIN Division 
+        ON (Colegio_Inscripcion.Ins_Div_ID = Division.Div_ID)
+		WHERE Ins_Lec_ID = 
+		ORDER BY  Ins_Niv_ID, Ins_Cur_ID, Ins_Div_ID

@@ -1,0 +1,25 @@
+[17-02-2023 07:56:12] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 49 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-02-17 07:56:12\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 32
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID
+[17-02-2023 08:43:31] ERROR: funciones_generales.php - linea: 1447 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 7 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID = 
+ AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[17-02-2023 09:21:20] ERROR: funciones_generales.php - linea: 1447 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 7 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID = 
+ AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;

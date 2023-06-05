@@ -1,0 +1,1 @@
+[14-12-2022 16:55:50] ERROR: mostrarFacturaImpresa.php - linea: 82 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM FacturaDetalle WHERE FDe_Fac_ID =

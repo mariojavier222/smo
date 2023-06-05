@@ -1,0 +1,25 @@
+[08-02-2023 23:35:42] ERROR: migrarAlumnos2023.php - linea: 21 - error: Table 'napta_smo.persona' doesn't exist - SQL: SELECT * FROM alumnos_2023_ok INNER JOIN persona ON (DNI = Per_DNI)
+[08-02-2023 23:37:53] ERROR: migrarAlumnos2023.php - linea: 21 - error: Table 'napta_smo.persona' doesn't exist - SQL: SELECT * FROM alumnos_2023_ok INNER JOIN persona ON (alumnos_2023_ok.DNI = persona.Per_DNI)
+[08-02-2023 23:38:26] ERROR: migrarAlumnos2023.php - linea: 21 - error: Table 'napta_smo.persona' doesn't exist - SQL: SELECT * FROM alumnos_2023_ok INNER JOIN persona ON (alumnos_2023_ok.DNI = persona.Per_DNI)
+[08-02-2023 23:39:16] ERROR: migrarAlumnos2023.php - linea: 21 - error: Unknown column 'persona.Per_DNI' in 'on clause' - SQL: SELECT * FROM alumnos_2023_ok INNER JOIN Persona ON (alumnos_2023_ok.DNI = persona.Per_DNI)
+[08-02-2023 23:43:45] ERROR: migrarCuotas2023.php - linea: 26 - error: Unknown column 'persona.Per_DNI' in 'on clause' - SQL: SELECT * FROM
+    alumnos_2023
+    INNER JOIN Persona 
+        ON (alumnos_2023.DNI = persona.Per_DNI)
+    INNER JOIN cuotas_impagas_2023 
+        ON (alumnos_2023.MATRICULA = cuotas_impagas_2023.MATRICULA)
+    INNER JOIN Legajo 
+        ON (legajo.Leg_Per_ID = persona.Per_ID) WHERE cuotas_impagas_2023.CUALFEC1VT=2023;
+[08-02-2023 23:46:10] ERROR: mostrarDevengadoVencidoVencer.php - linea: 101 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'napta_smo.Colegio_Nivel.Niv_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW Niv_Siglas, Cur_Siglas, Div_Siglas, Per_Apellido, Per_Nombre, Per_DNI, Per_ID FROM
+    Colegio_Inscripcion
+    INNER JOIN Legajo 
+        ON (Colegio_Inscripcion.Ins_Leg_ID = Legajo.Leg_ID)
+    INNER JOIN Curso 
+        ON (Colegio_Inscripcion.Ins_Cur_ID = Curso.Cur_ID)
+    INNER JOIN Division 
+        ON (Colegio_Inscripcion.Ins_Div_ID = Division.Div_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Colegio_Inscripcion.Ins_Niv_ID = Colegio_Nivel.Niv_ID)
+    INNER JOIN Persona 
+        ON (Legajo.Leg_Per_ID = Per_ID)
+     WHERE Ins_Lec_ID = 23  ORDER BY Niv_ID, Cur_ID, Div_ID, Per_Apellido, Per_Nombre;

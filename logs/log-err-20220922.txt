@@ -1,0 +1,194 @@
+[22-09-2022 10:54:19] ERROR: cargarFunciones.php - linea: 4905 - error: Incorrect date value: '0000-00-00' for column 'CMo_2do_Vencimiento' at row 1 - SQL: INSERT INTO CuotaModelo (CMo_Lec_ID, CMo_Niv_ID, CMo_CTi_ID, CMo_Alt_ID, CMo_Usu_ID, CMo_Fecha, CMo_Hora, CMo_CantCuotas,
+    CMo_Importe, CMo_1er_Vencimiento,   CMo_2do_Vencimiento, CMo_3er_Vencimiento, CMo_Mes, 
+    CMo_Anio, CMo_1er_Recargo, CMo_2do_Recargo, CMo_Recargo_Mensual, CMo_Numero, CMo_Agrupa, CMo_Especial) VALUES (21,\'1\', \'15\', \'1\', \'2\', \'2022-09-22\', \'10:54:19\', 
+    1, \'5000\', \'2022-09-30\', \'0000-00-00\', \'0000-00-00\', 
+    9,2022, \'10\', \'0\', \'10\', \'1\', \'0\', \'0\')
+[22-09-2022 10:58:37] ERROR: cargarFunciones.php - linea: 4905 - error: Incorrect date value: '0000-00-00' for column 'CMo_2do_Vencimiento' at row 1 - SQL: INSERT INTO CuotaModelo (CMo_Lec_ID, CMo_Niv_ID, CMo_CTi_ID, CMo_Alt_ID, CMo_Usu_ID, CMo_Fecha, CMo_Hora, CMo_CantCuotas,
+    CMo_Importe, CMo_1er_Vencimiento,   CMo_2do_Vencimiento, CMo_3er_Vencimiento, CMo_Mes, 
+    CMo_Anio, CMo_1er_Recargo, CMo_2do_Recargo, CMo_Recargo_Mensual, CMo_Numero, CMo_Agrupa, CMo_Especial) VALUES (21,\'1\', \'15\', \'1\', \'2\', \'2022-09-22\', \'10:58:37\', 
+    1, \'5000\', \'2022-09-30\', \'0000-00-00\', \'0000-00-00\', 
+    9,2022, \'10\', \'0\', \'10\', \'1\', \'0\', \'0\')
+[22-09-2022 10:59:57] ERROR: cargarFunciones.php - linea: 4905 - error: Incorrect date value: '0000-00-00' for column 'CMo_2do_Vencimiento' at row 1 - SQL: INSERT INTO CuotaModelo (CMo_Lec_ID, CMo_Niv_ID, CMo_CTi_ID, CMo_Alt_ID, CMo_Usu_ID, CMo_Fecha, CMo_Hora, CMo_CantCuotas,
+    CMo_Importe, CMo_1er_Vencimiento,   CMo_2do_Vencimiento, CMo_3er_Vencimiento, CMo_Mes, 
+    CMo_Anio, CMo_1er_Recargo, CMo_2do_Recargo, CMo_Recargo_Mensual, CMo_Numero, CMo_Agrupa, CMo_Especial) VALUES (21,\'1\', \'15\', \'1\', \'2\', \'2022-09-22\', \'10:59:57\', 
+    1, \'5000\', \'2022-09-30\', \'0000-00-00\', \'0000-00-00\', 
+    9,2022, \'10\', \'0\', \'10\', \'1\', \'0\', \'0\')
+[22-09-2022 11:02:13] ERROR: cargarFunciones.php - linea: 4905 - error: Incorrect date value: '--' for column 'CMo_2do_Vencimiento' at row 1 - SQL: INSERT INTO CuotaModelo (CMo_Lec_ID, CMo_Niv_ID, CMo_CTi_ID, CMo_Alt_ID, CMo_Usu_ID, CMo_Fecha, CMo_Hora, CMo_CantCuotas,
+    CMo_Importe, CMo_1er_Vencimiento,   CMo_2do_Vencimiento, CMo_3er_Vencimiento, CMo_Mes, 
+    CMo_Anio, CMo_1er_Recargo, CMo_2do_Recargo, CMo_Recargo_Mensual, CMo_Numero, CMo_Agrupa, CMo_Especial) VALUES (21,\'1\', \'15\', \'1\', \'2\', \'2022-09-22\', \'11:02:13\', 
+    1, \'5000\', \'2022-09-30\', \'--\', \'--\', 
+    9,2022, \'10\', \'0\', \'10\', \'1\', \'0\', \'0\')
+[22-09-2022 11:04:48] ERROR: cargarFunciones.php - linea: 6672 - error: Incorrect date value: '0000-00-00' for column 'CMo_2do_Vencimiento' at row 1 - SQL: UPDATE CuotaModelo SET	
+	CMo_Importe = \'4100.00\' , 
+	CMo_Mes = \'9\' , 
+	CMo_1er_Recargo = \'10.00\',
+    CMo_2do_Recargo = \'0.00\',
+	CMo_Recargo_Mensual = \'170.00\',
+	CMo_CantCuotas = \'1\',
+	CMo_1er_Vencimiento = \'2022-09-30\',
+    CMo_2do_Vencimiento = \'0000-00-00\',
+    CMo_3er_Vencimiento = \'0000-00-00\',
+    CMo_Numero = \'1\',
+    CMo_Agrupa = \'0\',
+    CMo_Especial = \'0\',
+    CMo_Fecha = \'2022-09-22\', 
+    CMo_Hora = \'11:04:48\', 
+    CMo_Usu_ID = \'2\'
+	WHERE
+	CMo_Lec_ID = \'21\' AND CMo_Niv_ID = \'1\' AND CMo_CTi_ID = \'15\' AND CMo_Alt_ID = \'1\' AND CMo_Numero = \'1\';
+[22-09-2022 14:05:38] ERROR: imprimirCajaCorriente.php - linea: 106 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 14:05:48] ERROR: imprimirCajaCorriente.php - linea: 106 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 14:05:53] ERROR: imprimirCajaCorriente.php - linea: 106 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 14:06:04] ERROR: imprimirCajaCorriente.php - linea: 106 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 14:06:50] ERROR: imprimirCajaCorriente.php - linea: 109 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 14:20:10] ERROR: imprimirCajaCorriente.php - linea: 106 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 15:58:24] ERROR: mostrarListadoRecibos.php - linea: 45 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.FacturaTipo.FTi_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW
+    Factura.Fac_Sucursal
+    , Factura.Fac_Numero
+    , Factura.Fac_ImporteTotal
+    , Factura.Fac_Pagada
+    , Factura.Fac_Anulada
+    , Caja.Caja_ID
+    , Factura.Fac_Fecha
+    , Factura.Fac_Hora
+    , FacturaTipo.FTi_Nombre
+FROM
+    FacturaDetalle
+    INNER JOIN Factura 
+        ON (FDe_Fac_ID = Fac_ID)
+    INNER JOIN FacturaTipo 
+        ON (Fac_FTi_ID = FTi_ID)  
+    INNER JOIN CuotaPago 
+        ON (FDe_Fac_ID = CuP_Fac_ID) AND (FDe_Item = CuP_FDe_Item)
+    INNER JOIN Caja 
+        ON (CuP_Caja_ID = Caja_ID)				
+WHERE (Fac_Fecha >= \'2022-04-01\' AND Fac_Fecha <= \'2022-09-30\') ORDER BY FTi_ID, Fac_Sucursal, Fac_Numero, Fac_Fecha, Fac_Hora;
+[22-09-2022 15:58:42] ERROR: mostrarListadoRecibos.php - linea: 45 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.FacturaTipo.FTi_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW
+    Factura.Fac_Sucursal
+    , Factura.Fac_Numero
+    , Factura.Fac_ImporteTotal
+    , Factura.Fac_Pagada
+    , Factura.Fac_Anulada
+    , Caja.Caja_ID
+    , Factura.Fac_Fecha
+    , Factura.Fac_Hora
+    , FacturaTipo.FTi_Nombre
+FROM
+    FacturaDetalle
+    INNER JOIN Factura 
+        ON (FDe_Fac_ID = Fac_ID)
+    INNER JOIN FacturaTipo 
+        ON (Fac_FTi_ID = FTi_ID)  
+    INNER JOIN CuotaPago 
+        ON (FDe_Fac_ID = CuP_Fac_ID) AND (FDe_Item = CuP_FDe_Item)
+    INNER JOIN Caja 
+        ON (CuP_Caja_ID = Caja_ID)				
+WHERE (Fac_Fecha >= \'2022-04-01\' AND Fac_Fecha <= \'2022-09-30\') ORDER BY FTi_ID, Fac_Sucursal, Fac_Numero, Fac_Fecha, Fac_Hora;
+
+[22-09-2022 16:01:34] ERROR: listadoFactura.php - linea: 350 - error: Expression #41 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'smo.CuotaPago.CuP_Lec_ID' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM
+    Factura
+    INNER JOIN Usuario 
+        ON (Factura.Fac_Usu_ID = Usuario.Usu_ID)
+    INNER JOIN CuotaPago 
+        ON (CuotaPago.CuP_Fac_ID = Factura.Fac_ID)
+    INNER JOIN FacturaTipo
+      ON (Factura.Fac_FTi_ID = FacturaTipo.FTi_ID) WHERE
+	CuP_Per_ID=\'728\' GROUP BY Fac_ID ORDER BY Fac_ID
+                                                    
+[22-09-2022 16:04:34] ERROR: imprimirCajaCorriente.php - linea: 106 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 16:07:20] ERROR: ListarFactura.php - linea: 104 - error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'smo.FacturaDetalle.FDe_Item' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM
+    FacturaDetalle
+    INNER JOIN Factura 
+        ON (FDe_Fac_ID = Fac_ID)
+    INNER JOIN FacturaTipo 
+        ON (Fac_FTi_ID = FTi_ID)  
+    INNER JOIN CuotaPago 
+        ON (FDe_Fac_ID = CuP_Fac_ID) AND (FDe_Item = CuP_FDe_Item)
+    INNER JOIN Caja 
+        ON (CuP_Caja_ID = Caja_ID)
+    INNER JOIN Persona 
+        ON (Per_ID = CuP_Per_ID) WHERE Caja_ID=4 GROUP BY Fac_ID ORDER BY Fac_ID;
+[22-09-2022 16:07:23] ERROR: cargarTotalImportes.php - linea: 223 - error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'smo.FormaPago.For_ID' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT For_ID,For_Nombre, SUM(CCC_Credito) - SUM(CCC_Debito)  AS total
+FROM CajaCorriente INNER JOIN FormaPago ON (CajaCorriente.CCC_For_ID = FormaPago.For_ID) WHERE CCC_Caja_ID = 4 GROUP BY For_Nombre
+[22-09-2022 16:07:29] ERROR: imprimirCajaCorrienteRecibos.php - linea: 104 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+        ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 4 ORDER BY CCC_ID
+[22-09-2022 16:07:29] ERROR: imprimirCajaCorrienteRecibos.php - linea: 123 - error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'smo.FacturaDetalle.FDe_Item' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM FacturaDetalle
+    INNER JOIN Factura 
+        ON (FDe_Fac_ID = Fac_ID)
+    INNER JOIN FacturaTipo 
+        ON (Fac_FTi_ID = FTi_ID)  
+    INNER JOIN CuotaPago 
+        ON (FDe_Fac_ID = CuP_Fac_ID) AND (FDe_Item = CuP_FDe_Item)
+    INNER JOIN Caja 
+        ON (CuP_Caja_ID = Caja_ID)
+    INNER JOIN Persona 
+        ON (Per_ID = CuP_Per_ID) WHERE Caja_ID=4 GROUP BY Fac_ID;
+[22-09-2022 16:08:11] ERROR: listadoFactura.php - linea: 350 - error: Expression #41 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'smo.CuotaPago.CuP_Lec_ID' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM
+    Factura
+    INNER JOIN Usuario 
+        ON (Factura.Fac_Usu_ID = Usuario.Usu_ID)
+    INNER JOIN CuotaPago 
+        ON (CuotaPago.CuP_Fac_ID = Factura.Fac_ID)
+    INNER JOIN FacturaTipo
+      ON (Factura.Fac_FTi_ID = FacturaTipo.FTi_ID) WHERE Fac_Fecha<=\'2022-09-30\' AND Fac_Fecha>=\'2022-09-01\' GROUP BY Fac_ID ORDER BY Fac_ID
+[22-09-2022 20:43:02] ERROR: cargarFunciones.php - linea: 7359 - error: Incorrect integer value: '
+620' for column 'Cuo_Per_ID' at row 1 - SQL: INSERT INTO CuotaPersona 
+	(Cuo_Lec_ID, 
+	Cuo_Per_ID, 
+	Cuo_Niv_ID,
+	Cuo_CTi_ID, 
+	Cuo_Alt_ID, 
+	Cuo_Numero, 
+	Cuo_Ben_ID, 
+	Cuo_Usu_ID, 
+	Cuo_Fecha, 
+	Cuo_Hora, 
+	Cuo_Importe, 
+	Cuo_1er_Recargo, 
+	Cuo_2do_Recargo, 
+	Cuo_1er_Vencimiento, 
+	Cuo_2do_Vencimiento, 
+	Cuo_3er_Vencimiento, 
+	Cuo_Mes, 
+	Cuo_Anio, 
+	Cuo_Pagado, 
+	Cuo_Cancelado, 
+	Cuo_Anulado, 
+	Cuo_Recargo_Mensual,
+	Cuo_ImporteOriginal,
+	Cuo_PPa_ID
+	)
+	VALUES
+	(\'21\', 
+	\'
+620\', 
+	\'1\', 
+	\'5\', 
+	\'1\', 
+	\'2\', 
+	\'1\', 
+	\'2\', 
+	\'2022-09-22\', 
+	\'20:43:02\', 
+	\'200\', 
+	\'10\', 
+	\'10\', 
+	\'2022-09-30\', 
+	\'2022-09-30\', 
+	\'2022-09-30\', 
+	\'9\', 
+	\'2022\', 
+	\'0\', 
+	\'0\', 
+	\'0\', 
+	\'100\',
+	\'200\',
+	\'0\'
+	);

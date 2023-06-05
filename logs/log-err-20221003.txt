@@ -1,0 +1,1 @@
+[03-10-2022 21:05:09] ERROR: test-db.php - linea: 12 - error: Table 'smo.Opcionee' doesn't exist - SQL: SELECT * FROM Opcionee 

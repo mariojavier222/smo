@@ -1,0 +1,1 @@
+[25-11-2022 10:49:45] ERROR: cargarFunciones.php - linea: 9905 - error: Duplicate entry '33234131' for key 'UNIQUE' - SQL: INSERT INTO Persona (Per_Doc_ID, Per_DNI, Per_Apellido, Per_Nombre, Per_Sexo, Per_Fecha, Per_Hora, Per_Token) VALUES(\'1\', \'33234131\', \'CENACCHI\', \'Ana Soledad\', \'F\', \'2022-11-25\', \'10:49:45\', UUID())

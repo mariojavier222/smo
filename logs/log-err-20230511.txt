@@ -1,0 +1,1 @@
+[11-05-2023 15:11:04] ERROR: cargarFunciones.php - linea: 9835 - error: Duplicate entry '20675493' for key 'UNIQUE' - SQL: UPDATE Persona SET Per_Doc_ID=\'1\', Per_DNI=\'20675493\', Per_Apellido=\'SAVALL\', Per_Nombre=\'Patricia Del Valle\', Per_Sexo=\'F\', Per_Fecha=\'2023-05-11\', Per_Hora=\'15:11:04\' WHERE Per_ID=\'371\'

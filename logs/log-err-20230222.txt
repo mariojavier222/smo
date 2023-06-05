@@ -1,0 +1,48 @@
+[22-02-2023 08:09:40] ERROR: guardarLegajo.php - linea: 46 - error: Incorrect date value: '--//' for column 'Leg_Alta_Fecha' at row 1 - SQL: UPDATE Legajo SET Leg_Numero = \'50807975\', Leg_Sed_ID = \'1\', Leg_Alta_Fecha = \'--//\', Leg_Fecha = \'2023-02-22\', Leg_Hora = \'08:09:40\', Leg_Usu_ID = \'2856\', Leg_Colegio = \'1\' , Leg_Baja_Fecha = \'2023-02-22\', Leg_Baja = 1, Leg_Baja_Motivo = \'SE CAMBIA DE ESTABLECIMIENTO\', Leg_Baja_Usu_ID = \'2856\' WHERE Leg_ID = 1231
+[22-02-2023 10:05:50] ERROR: funciones_generales.php - linea: 1447 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 7 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID = 
+ AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[22-02-2023 10:06:08] ERROR: funciones_generales.php - linea: 1447 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 7 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID = 
+ AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[22-02-2023 11:40:47] ERROR: funciones_generales.php - linea: 1447 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 7 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID = 
+ AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[22-02-2023 12:05:36] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 97 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-02-22 12:05:36\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 35
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID
+[22-02-2023 12:12:51] ERROR: mostrarFacturaImpresa.php - linea: 82 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM FacturaDetalle WHERE FDe_Fac_ID =
+[22-02-2023 16:33:23] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 103 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-02-22 16:33:23\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 35
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID
+[22-02-2023 18:20:18] ERROR: test-db.php - linea: 12 - error: Table 'napta_smo.Opcionee' doesn't exist - SQL: SELECT * FROM Opcionee 
+[22-02-2023 18:31:05] ERROR: test-db.php - linea: 12 - error: Table 'napta_smo.Opcionee' doesn't exist - SQL: SELECT * FROM Opcionee 
+[22-02-2023 18:31:37] ERROR: test-db.php - linea: 12 - error: Table 'napta_smo.Opcionee' doesn't exist - SQL: SELECT * FROM Opcionee 

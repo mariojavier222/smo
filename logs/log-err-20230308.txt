@@ -1,0 +1,121 @@
+[08-03-2023 08:38:42] ERROR: funciones_generales.php - linea: 1461 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 6 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID =  AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[08-03-2023 10:43:07] ERROR: cargarFunciones.php - linea: 7398 - error: Incorrect integer value: '' for column `naptagestionar_smo`.`CuotaPersona`.`Cuo_Niv_ID` at row 1 - SQL: INSERT INTO CuotaPersona 
+	(Cuo_Lec_ID, 
+	Cuo_Per_ID, 
+	Cuo_Niv_ID,
+	Cuo_CTi_ID, 
+	Cuo_Alt_ID, 
+	Cuo_Numero, 
+	Cuo_Ben_ID, 
+	Cuo_Usu_ID, 
+	Cuo_Fecha, 
+	Cuo_Hora, 
+	Cuo_Importe, 
+	Cuo_1er_Recargo, 
+	Cuo_2do_Recargo, 
+	Cuo_1er_Vencimiento, 
+	Cuo_2do_Vencimiento, 
+	Cuo_3er_Vencimiento, 
+	Cuo_Mes, 
+	Cuo_Anio, 
+	Cuo_Pagado, 
+	Cuo_Cancelado, 
+	Cuo_Anulado, 
+	Cuo_Recargo_Mensual,
+	Cuo_ImporteOriginal,
+	Cuo_PPa_ID
+	)
+	VALUES
+	(\'23\', 
+	\'3209\', 
+	\'\', 
+	\'29\', 
+	\'1\', 
+	\'1\', 
+	\'1\', 
+	\'2856\', 
+	\'2023-03-08\', 
+	\'10:43:07\', 
+	\'10000\', 
+	\'0\', 
+	\'0\', 
+	\'2023-03-08\', 
+	\'2023-03-08\', 
+	\'2023-03-08\', 
+	\'3\', 
+	\'2023\', 
+	\'0\', 
+	\'0\', 
+	\'0\', 
+	\'0\',
+	\'10000\',
+	\'0\'
+	);
+[08-03-2023 10:43:52] ERROR: cargarFunciones.php - linea: 7398 - error: Incorrect integer value: '' for column `naptagestionar_smo`.`CuotaPersona`.`Cuo_Niv_ID` at row 1 - SQL: INSERT INTO CuotaPersona 
+	(Cuo_Lec_ID, 
+	Cuo_Per_ID, 
+	Cuo_Niv_ID,
+	Cuo_CTi_ID, 
+	Cuo_Alt_ID, 
+	Cuo_Numero, 
+	Cuo_Ben_ID, 
+	Cuo_Usu_ID, 
+	Cuo_Fecha, 
+	Cuo_Hora, 
+	Cuo_Importe, 
+	Cuo_1er_Recargo, 
+	Cuo_2do_Recargo, 
+	Cuo_1er_Vencimiento, 
+	Cuo_2do_Vencimiento, 
+	Cuo_3er_Vencimiento, 
+	Cuo_Mes, 
+	Cuo_Anio, 
+	Cuo_Pagado, 
+	Cuo_Cancelado, 
+	Cuo_Anulado, 
+	Cuo_Recargo_Mensual,
+	Cuo_ImporteOriginal,
+	Cuo_PPa_ID
+	)
+	VALUES
+	(\'23\', 
+	\'3209\', 
+	\'\', 
+	\'2\', 
+	\'1\', 
+	\'1\', 
+	\'1\', 
+	\'2856\', 
+	\'2023-03-08\', 
+	\'10:43:52\', 
+	\'5610\', 
+	\'0\', 
+	\'0\', 
+	\'2023-03-25\', 
+	\'2023-03-25\', 
+	\'2023-03-25\', 
+	\'3\', 
+	\'2023\', 
+	\'0\', 
+	\'0\', 
+	\'0\', 
+	\'0\',
+	\'5610\',
+	\'0\'
+	);
+[08-03-2023 13:31:07] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 1 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-03-08 13:31:07\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 52
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID

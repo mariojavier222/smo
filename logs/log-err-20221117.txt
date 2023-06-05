@@ -1,0 +1,188 @@
+[17-11-2022 09:40:15] ERROR: index.php - linea: 282 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: SELECT Opc_ID, COUNT(*) AS Total FROM
+                    AccesoOpcion
+                    INNER JOIN Login 
+                        ON (AccesoOpcion.Acc_Log_ID = Login.Log_ID)
+                                INNER JOIN Opcion 
+                        ON (AccesoOpcion.Acc_Men_ID = Opcion.Opc_Men_ID) AND (AccesoOpcion.Acc_Opc_ID = Opcion.Opc_ID)
+                    INNER JOIN Usuario 
+                        ON (Login.Log_Usu_ID = Usuario.Usu_ID) WHERE Usu_ID = 2 AND CHAR_LENGTH(Opc_Ruta)>3 GROUP BY Opc_ID ORDER BY Total DESC LIMIT 0,8
+[17-11-2022 09:40:27] ERROR: guardarAccesoOpcion.php - linea: 22 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: INSERT IGNORE INTO AccesoOpcion (Acc_Log_ID, Acc_Men_ID, Acc_Opc_ID, Acc_Hora) VALUES (194, 12, 34, \'09:40:27\')
+[17-11-2022 09:40:43] ERROR: index.php - linea: 282 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: SELECT Opc_ID, COUNT(*) AS Total FROM
+                    AccesoOpcion
+                    INNER JOIN Login 
+                        ON (AccesoOpcion.Acc_Log_ID = Login.Log_ID)
+                                INNER JOIN Opcion 
+                        ON (AccesoOpcion.Acc_Men_ID = Opcion.Opc_Men_ID) AND (AccesoOpcion.Acc_Opc_ID = Opcion.Opc_ID)
+                    INNER JOIN Usuario 
+                        ON (Login.Log_Usu_ID = Usuario.Usu_ID) WHERE Usu_ID = 2 AND CHAR_LENGTH(Opc_Ruta)>3 GROUP BY Opc_ID ORDER BY Total DESC LIMIT 0,8
+[17-11-2022 09:40:51] ERROR: guardarAccesoOpcion.php - linea: 22 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: INSERT IGNORE INTO AccesoOpcion (Acc_Log_ID, Acc_Men_ID, Acc_Opc_ID, Acc_Hora) VALUES (194, 6, 138, \'09:40:51\')
+[17-11-2022 09:41:05] ERROR: guardarAccesoOpcion.php - linea: 22 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: INSERT IGNORE INTO AccesoOpcion (Acc_Log_ID, Acc_Men_ID, Acc_Opc_ID, Acc_Hora) VALUES (194, 6, 92, \'09:41:05\')
+[17-11-2022 09:41:06] ERROR: funciones_generales.php - linea: 1420 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Lectivo WHERE Lec_ID = 
+[17-11-2022 09:41:10] ERROR: index.php - linea: 282 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: SELECT Opc_ID, COUNT(*) AS Total FROM
+                    AccesoOpcion
+                    INNER JOIN Login 
+                        ON (AccesoOpcion.Acc_Log_ID = Login.Log_ID)
+                                INNER JOIN Opcion 
+                        ON (AccesoOpcion.Acc_Men_ID = Opcion.Opc_Men_ID) AND (AccesoOpcion.Acc_Opc_ID = Opcion.Opc_ID)
+                    INNER JOIN Usuario 
+                        ON (Login.Log_Usu_ID = Usuario.Usu_ID) WHERE Usu_ID = 2 AND CHAR_LENGTH(Opc_Ruta)>3 GROUP BY Opc_ID ORDER BY Total DESC LIMIT 0,8
+[17-11-2022 09:41:16] ERROR: registro_sesion.php - linea: 71 - error: Table 'napta_smo.Roles2' doesn't exist - SQL: SELECT * FROM RolUsuario, Roles2 WHERE RUs_Rol_ID = Rol_ID AND RUs_Usu_ID = \'2\'
+[17-11-2022 09:41:17] ERROR: index.php - linea: 282 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: SELECT Opc_ID, COUNT(*) AS Total FROM
+                    AccesoOpcion
+                    INNER JOIN Login 
+                        ON (AccesoOpcion.Acc_Log_ID = Login.Log_ID)
+                                INNER JOIN Opcion 
+                        ON (AccesoOpcion.Acc_Men_ID = Opcion.Opc_Men_ID) AND (AccesoOpcion.Acc_Opc_ID = Opcion.Opc_ID)
+                    INNER JOIN Usuario 
+                        ON (Login.Log_Usu_ID = Usuario.Usu_ID) WHERE Usu_ID = 2 AND CHAR_LENGTH(Opc_Ruta)>3 GROUP BY Opc_ID ORDER BY Total DESC LIMIT 0,8
+[17-11-2022 09:41:36] ERROR: guardarAccesoOpcion.php - linea: 22 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: INSERT IGNORE INTO AccesoOpcion (Acc_Log_ID, Acc_Men_ID, Acc_Opc_ID, Acc_Hora) VALUES (2, 1, 1, \'09:41:36\')
+[17-11-2022 09:43:09] ERROR: guardarAccesoOpcion.php - linea: 22 - error: Table 'napta_smo.AccesoOpcion' doesn't exist - SQL: INSERT IGNORE INTO AccesoOpcion (Acc_Log_ID, Acc_Men_ID, Acc_Opc_ID, Acc_Hora) VALUES (2, 1, 1, \'09:43:09\')
+[17-11-2022 09:47:07] ERROR: registro_sesion.php - linea: 71 - error: Table 'napta_smo.Roles2' doesn't exist - SQL: SELECT * FROM RolUsuario, Roles2 WHERE RUs_Rol_ID = Rol_ID AND RUs_Usu_ID = \'2\'
+[17-11-2022 10:03:43] ERROR: funciones_generales.php - linea: 1420 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Lectivo WHERE Lec_ID = 
+[17-11-2022 10:07:06] ERROR: funciones_generales.php - linea: 1420 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Lectivo WHERE Lec_ID = 
+[17-11-2022 10:08:18] ERROR: cargarFunciones.php - linea: 4908 - error: Unknown column 'CMo_Especial' in 'field list' - SQL: INSERT INTO CuotaModelo (CMo_Lec_ID, CMo_Niv_ID, CMo_CTi_ID, CMo_Alt_ID, CMo_Usu_ID, CMo_Fecha, CMo_Hora, CMo_CantCuotas,
+    CMo_Importe, CMo_1er_Vencimiento,   CMo_2do_Vencimiento, CMo_3er_Vencimiento, CMo_Mes, 
+    CMo_Anio, CMo_1er_Recargo, CMo_2do_Recargo, CMo_Recargo_Mensual, CMo_Numero, CMo_Agrupa, CMo_Especial) VALUES (21,\'1\', \'2\', \'1\', \'2\', \'2022-11-17\', \'10:08:18\', 
+    1, \'3000\', \'2022-11-25\', \'2022-11-25\', \'2022-11-25\', 
+    12,2022, \'100\', \'0\', \'100\', \'1\', \'0\', \'0\')
+[17-11-2022 10:12:10] ERROR: funciones_generales.php - linea: 1420 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Lectivo WHERE Lec_ID = 
+[17-11-2022 10:20:25] ERROR: cargarFunciones.php - linea: 7305 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY Cuo_Lec_ID' at line 2 - SQL: SELECT *, MAX(Cuo_Numero) AS Cuo_Numero FROM 
+	CuotaPersona WHERE Cuo_Per_ID=2521 AND Cuo_Lec_ID= GROUP BY Cuo_Lec_ID;
+[17-11-2022 10:20:26] ERROR: cargarFunciones.php - linea: 7329 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT Ins_Niv_ID FROM Colegio_Inscripcion INNER JOIN Legajo ON (Ins_Leg_ID = Leg_ID) WHERE Leg_Per_ID=2521 AND Ins_Lec_ID = ;
+[17-11-2022 10:20:27] ERROR: cargarFunciones.php - linea: 7391 - error: Incorrect integer value: '' for column 'Cuo_Lec_ID' at row 1 - SQL: INSERT INTO CuotaPersona 
+    	(Cuo_Lec_ID, 
+    	Cuo_Per_ID, 
+    	Cuo_Niv_ID,
+    	Cuo_CTi_ID, 
+    	Cuo_Alt_ID, 
+    	Cuo_Numero, 
+    	Cuo_Ben_ID, 
+    	Cuo_Usu_ID, 
+    	Cuo_Fecha, 
+    	Cuo_Hora, 
+    	Cuo_Importe, 
+    	Cuo_1er_Recargo, 
+    	Cuo_2do_Recargo, 
+    	Cuo_1er_Vencimiento, 
+    	Cuo_2do_Vencimiento, 
+    	Cuo_3er_Vencimiento, 
+    	Cuo_Mes, 
+    	Cuo_Anio, 
+    	Cuo_Pagado, 
+    	Cuo_Cancelado, 
+    	Cuo_Anulado, 
+    	Cuo_Recargo_Mensual,
+    	Cuo_ImporteOriginal,
+    	Cuo_PPa_ID
+    	)
+    	VALUES
+    	(\'\', 
+    	\'2521\', 
+    	\'\', 
+    	\'3\', 
+    	\'1\', 
+    	\'1\', 
+    	\'1\', 
+    	\'2\', 
+    	\'2022-11-17\', 
+    	\'10:20:27\', 
+    	\'200\', 
+    	\'100\', 
+    	\'100\', 
+    	\'2022-11-17\', 
+    	\'2022-11-17\', 
+    	\'2022-11-17\', 
+    	\'11\', 
+    	\'2022\', 
+    	\'0\', 
+    	\'0\', 
+    	\'0\', 
+    	\'100\',
+    	\'200\',
+    	\'0\'
+    	);
+[17-11-2022 10:35:17] ERROR: cargarFunciones.php - linea: 7397 - error: Cannot add or update a child row: a foreign key constraint fails (`napta_smo`.`CuotaPersona`, CONSTRAINT `FK_CuotaPersona2` FOREIGN KEY (`Cuo_Ben_ID`) REFERENCES `CuotaBeneficio` (`Ben_ID`)) - SQL: INSERT INTO CuotaPersona 
+    	(Cuo_Lec_ID, 
+    	Cuo_Per_ID, 
+    	Cuo_Niv_ID,
+    	Cuo_CTi_ID, 
+    	Cuo_Alt_ID, 
+    	Cuo_Numero, 
+    	Cuo_Ben_ID, 
+    	Cuo_Usu_ID, 
+    	Cuo_Fecha, 
+    	Cuo_Hora, 
+    	Cuo_Importe, 
+    	Cuo_1er_Recargo, 
+    	Cuo_2do_Recargo, 
+    	Cuo_1er_Vencimiento, 
+    	Cuo_2do_Vencimiento, 
+    	Cuo_3er_Vencimiento, 
+    	Cuo_Mes, 
+    	Cuo_Anio, 
+    	Cuo_Pagado, 
+    	Cuo_Cancelado, 
+    	Cuo_Anulado, 
+    	Cuo_Recargo_Mensual,
+    	Cuo_ImporteOriginal,
+    	Cuo_PPa_ID
+    	)
+    	VALUES
+    	(\'21\', 
+    	\'2521\', 
+    	\'1\', 
+    	\'3\', 
+    	\'1\', 
+    	\'1\', 
+    	\'1\', 
+    	\'2\', 
+    	\'2022-11-17\', 
+    	\'10:35:17\', 
+    	\'200\', 
+    	\'10\', 
+    	\'10\', 
+    	\'2022-11-17\', 
+    	\'2022-11-17\', 
+    	\'2022-11-17\', 
+    	\'11\', 
+    	\'2022\', 
+    	\'0\', 
+    	\'0\', 
+    	\'0\', 
+    	\'10\',
+    	\'200\',
+    	\'0\'
+    	);
+[17-11-2022 10:42:35] ERROR: cargarFunciones.php - linea: 5609 - error: Cannot add or update a child row: a foreign key constraint fails (`napta_smo`.`Factura`, CONSTRAINT `factura_ibfk_3` FOREIGN KEY (`Fac_CVe_ID`) REFERENCES `CondicionVenta` (`CVe_ID`)) - SQL: INSERT INTO Factura (Fac_FTi_ID, Fac_Iva_ID, Fac_CVe_ID, Fac_Fecha, Fac_Hora, Fac_Usu_ID, Fac_CUIT, Fac_Sucursal, Fac_Numero, Fac_PersonaNombre, Fac_PersonaDomicilio, Fac_ImporteTotal, Fac_Pagada, Fac_Anulada, Fac_Detalle) VALUES(\'2\', \'5\', \'1\', \'2022-11-17\', \'10:42:35\', \'2\', \'\', \'0002\', \'00000001\', \'ALCAYAGA SOTO, Trinidad Antonella (DNI: 55620151) Ciclo : Primer grado \\\'A\\\' Primaria\', \'\', \'200\', 1, 0, \'prueba\')
+[17-11-2022 10:48:48] ERROR: cargarFunciones.php - linea: 5762 - error: Cannot add or update a child row: a foreign key constraint fails (`napta_smo`.`CuotaPagoDetalle`, CONSTRAINT `cuotapagodetalle_ibfk_2` FOREIGN KEY (`CPD_FDe_ID`, `CPD_For_ID`) REFERENCES `FormaPagoDetalle` (`FDe_ID`, `FDe_For_ID`)) - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(\'21\', \'2521\', \'1\', \'3\', \'1\', \'1\', \'1\', 1, \'1\', \'2022-11-17\', \'10:48:48\', \'200\')
+[17-11-2022 13:01:38] ERROR: cargarOpcionesPagosOnline.php - linea: 118 - error: Cannot add or update a child row: a foreign key constraint fails (`napta_smo`.`CuotaPagoDetalle`, CONSTRAINT `cuotapagodetalle_ibfk_2` FOREIGN KEY (`CPD_FDe_ID`, `CPD_For_ID`) REFERENCES `FormaPagoDetalle` (`FDe_ID`, `FDe_For_ID`)) - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(\'21\', \'2521\', \'1\', \'5\', \'1\', \'1\', \'1\', 2, \'15\', \'2022-11-17\', \'13:01:38\', \'95997\')
+[17-11-2022 17:12:35] ERROR: cargarFunciones.php - linea: 9847 - error: Duplicate entry '26611562' for key 'UNIQUE' - SQL: INSERT INTO Persona (Per_Doc_ID, Per_DNI, Per_Apellido, Per_Nombre, Per_Sexo, Per_Fecha, Per_Hora, Per_Token) VALUES(\'1\', \'26611562\', \'MARTINEZ\', \'Mario\', \'M\', \'2022-11-17\', \'17:12:35\', UUID())
+[17-11-2022 17:12:43] ERROR: cargarFunciones.php - linea: 9841 - error: Duplicate entry '26611562' for key 'UNIQUE' - SQL: INSERT INTO Persona (Per_Doc_ID, Per_DNI, Per_Apellido, Per_Nombre, Per_Sexo, Per_Fecha, Per_Hora, Per_Token) VALUES(\'1\', \'26611562\', \'MARTINEZ\', \'Mario\', \'M\', \'2022-11-17\', \'17:12:43\', UUID())
+[17-11-2022 17:12:53] ERROR: cargarFunciones.php - linea: 9841 - error: Duplicate entry '26611562' for key 'UNIQUE' - SQL: INSERT INTO Persona (Per_Doc_ID, Per_DNI, Per_Apellido, Per_Nombre, Per_Sexo, Per_Fecha, Per_Hora, Per_Token) VALUES(\'1\', \'26611562\', \'MARTINEZ\', \'Mario\', \'M\', \'2022-11-17\', \'17:12:53\', UUID())
+[17-11-2022 17:14:04] ERROR: cargarFunciones.php - linea: 9828 - error: Data too long for column 'Dat_CP' at row 1 - SQL: INSERT INTO PersonaDatos (Dat_Per_ID, Dat_Dom_Pro_ID, Dat_Dom_Pai_ID, Dat_Dom_Loc_ID, Dat_Nac_Pro_ID, Dat_Nac_Pai_ID, Dat_Nac_Loc_ID, Dat_Nacimiento, Dat_Domicilio, Dat_CP, Dat_Email, Dat_Telefono, Dat_Celular, Dat_Ocupacion, Dat_Retira, Dat_Observaciones, Dat_Fecha, Dat_Hora) VALUES(\'2846\', \'19\', \'1\', \'1735\', \'19\', \'1\', \'1735\', \'1978-06-30\', \'Dr. Enrique Kalejman 4950 oeste\', \'profesor en cs. de la computación\', \'\', \'5400\', \'mariojavier22@gmail.com\', \'1111111\', \'154179712\', \'\', \'2022-11-17\', \'17:14:04\')
+[17-11-2022 17:32:43] ERROR: guardarLegajo.php - linea: 59 - error: Incorrect integer value: '
+2846' for column 'Leg_Per_ID' at row 1 - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio) VALUES (\'1\', \'
+2846\', \'26611562\', \'2022-11-17\', \'2\', \'2022-11-17\', \'17:32:43\', \'1\')
+[17-11-2022 17:41:39] ERROR: guardarLegajo.php - linea: 59 - error: Field 'Leg_Baja_Usu_ID' doesn't have a default value - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio) VALUES (\'1\', \'2846\', \'26611562\', \'2022-11-17\', \'2\', \'2022-11-17\', \'17:41:39\', \'1\')
+[17-11-2022 17:46:17] ERROR: guardarLegajo.php - linea: 59 - error: Incorrect date value: '--' for column 'Leg_Baja_Fecha' at row 1 - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio, Leg_Baja_Fecha) VALUES (\'1\', \'2846\', \'26611562\', \'2022-11-17\', \'2\', \'2022-11-17\', \'17:46:17\', \'1\', \'--\')
+[17-11-2022 17:47:46] ERROR: guardarLegajo.php - linea: 59 - error: Incorrect date value: '--' for column 'Leg_Baja_Fecha' at row 1 - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio, Leg_Baja_Fecha) VALUES (\'1\', \'2846\', \'26611562\', \'2022-11-17\', \'2\', \'2022-11-17\', \'17:47:46\', \'1\', \'--\')
+[17-11-2022 17:52:14] ERROR: guardarLegajo.php - linea: 54 - error: Incorrect date value: '' for column 'Leg_Baja_Fecha' at row 1 - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio, Leg_Baja_Fecha) VALUES (\'1\', \'2846\', \'26611562\', \'2022-11-17\', \'2\', \'2022-11-17\', \'17:52:14\', \'1\', \'\')
+[17-11-2022 17:53:20] ERROR: guardarLegajo.php - linea: 54 - error: Field 'Leg_Baja_Usu_ID' doesn't have a default value - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio) VALUES (\'1\', \'2846\', \'26611562\', \'2022-11-17\', \'2\', \'2022-11-17\', \'17:53:20\', \'1\')
+[17-11-2022 18:11:01] ERROR: cargarFuncionesInscripcion.php - linea: 36 - error: Duplicate entry '1812-23' for key 'PRIMARY' - SQL: INSERT INTO Colegio_Inscripcion (Ins_Leg_ID, Ins_Lec_ID, Ins_Cur_ID, Ins_Niv_ID, Ins_Div_ID, Ins_Usu_ID, Ins_Fecha, Ins_Hora) VALUES (
+1812, 23, 2, 3, 3, 2, \'2022-11-17\', \'18:11:01\')
+[17-11-2022 18:12:29] ERROR: cargarFuncionesInscripcion.php - linea: 36 - error: Duplicate entry '1812-23' for key 'PRIMARY' - SQL: INSERT INTO Colegio_Inscripcion (Ins_Leg_ID, Ins_Lec_ID, Ins_Cur_ID, Ins_Niv_ID, Ins_Div_ID, Ins_Usu_ID, Ins_Fecha, Ins_Hora) VALUES (
+1812, 23, 2, 3, 3, 2, \'2022-11-17\', \'18:12:29\')
+[17-11-2022 18:16:53] ERROR: cargarFuncionesInscripcion.php - linea: 36 - error: Duplicate entry '1812-23' for key 'PRIMARY' - SQL: INSERT INTO Colegio_Inscripcion (Ins_Leg_ID, Ins_Lec_ID, Ins_Cur_ID, Ins_Niv_ID, Ins_Div_ID, Ins_Usu_ID, Ins_Fecha, Ins_Hora) VALUES (
+1812, 23, 2, 3, 3, 2, \'2022-11-17\', \'18:16:53\')
+[17-11-2022 18:17:10] ERROR: cargarFuncionesInscripcion.php - linea: 36 - error: Duplicate entry '1812-23' for key 'PRIMARY' - SQL: INSERT INTO Colegio_Inscripcion (Ins_Leg_ID, Ins_Lec_ID, Ins_Cur_ID, Ins_Niv_ID, Ins_Div_ID, Ins_Usu_ID, Ins_Fecha, Ins_Hora) VALUES (
+1812, 23, 2, 3, 3, 2, \'2022-11-17\', \'18:17:10\')
+[17-11-2022 18:24:33] ERROR: cargarFuncionesInscripcion.php - linea: 37 - error: Duplicate entry '1812-23' for key 'PRIMARY' - SQL: INSERT INTO Colegio_Inscripcion (Ins_Leg_ID, Ins_Lec_ID, Ins_Cur_ID, Ins_Niv_ID, Ins_Div_ID, Ins_Usu_ID, Ins_Fecha, Ins_Hora) VALUES (
+1812, 23, 2, 3, 3, 2, \'2022-11-17\', \'18:24:33\')
+[17-11-2022 18:31:34] ERROR: cargarFuncionesFamilia.php - linea: 88 - error: Incorrect integer value: '
+2521' for column 'Fam_Per_ID' at row 1 - SQL: INSERT INTO Familia (Fam_Per_ID, Fam_Vin_Per_ID, Fam_FTi_ID, Fam_Usu_ID, Fam_Fecha, Fam_Hora) VALUES (\'
+2521\', \'
+2846\', \'1\', \'2\', \'2022-11-17\', \'18:31:34\')
+[17-11-2022 18:32:44] ERROR: cargarFuncionesFamilia.php - linea: 88 - error: Incorrect integer value: '
+2521' for column 'Fam_Per_ID' at row 1 - SQL: INSERT INTO Familia (Fam_Per_ID, Fam_Vin_Per_ID, Fam_FTi_ID, Fam_Usu_ID, Fam_Fecha, Fam_Hora) VALUES (\'
+2521\', \'
+2846\', \'1\', \'2\', \'2022-11-17\', \'18:32:44\')

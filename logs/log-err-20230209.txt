@@ -1,0 +1,14 @@
+[09-02-2023 11:07:12] ERROR: mostrarCobrosOnline.php - linea: 130 - error: Expression #82 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'napta_smo.CuotaUnica.Rec_ID' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM CuotaPersona
+    INNER JOIN CuotaTipo 
+        ON (CuotaPersona.Cuo_CTi_ID = CuotaTipo.CTi_ID)
+    INNER JOIN Persona 
+        ON (CuotaPersona.Cuo_Per_ID = Persona.Per_ID)
+    INNER JOIN Lectivo 
+        ON (CuotaPersona.Cuo_Lec_ID = Lectivo.Lec_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (CuotaPersona.Cuo_Niv_ID = Colegio_Nivel.Niv_ID)
+    INNER JOIN CuotaBeneficio 
+        ON (CuotaPersona.Cuo_Ben_ID = CuotaBeneficio.Ben_ID) 
+    INNER JOIN CuotaUnica 
+        ON (CuotaPersona.Cuo_Numero = CuotaUnica.Rec_Numero) AND (CuotaPersona.Cuo_Per_ID = CuotaUnica.Rec_Per_ID) AND (CuotaPersona.Cuo_Niv_ID = CuotaUnica.Rec_Niv_ID) AND (CuotaPersona.Cuo_CTi_ID = CuotaUnica.Rec_CTi_ID) AND (CuotaPersona.Cuo_Lec_ID = CuotaUnica.Rec_Lec_ID) AND (CuotaPersona.Cuo_Alt_ID = CuotaUnica.Rec_Alt_ID)
+    WHERE Cuo_MarcadaOnline=1 AND Cuo_Procesada = 0 GROUP BY Rec_Lec_ID, Rec_Per_ID, Rec_Niv_ID, Rec_CTi_ID, Rec_Alt_ID, Rec_Numero ORDER BY Cuo_FechaMarcada DESC, Cuo_HoraMarcada DESC;

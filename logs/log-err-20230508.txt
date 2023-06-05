@@ -1,0 +1,6 @@
+[08-05-2023 10:05:49] ERROR: funciones_generales.php - linea: 1461 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 6 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID =  AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;

@@ -1,0 +1,30 @@
+[27-03-2023 10:12:02] ERROR: cargarFunciones.php - linea: 2309 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_N...' at line 15 - SQL: SELECT * FROM
+    CuotaPersona
+    INNER JOIN Lectivo 
+        ON (Cuo_Lec_ID = Lec_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Cuo_Niv_ID = Niv_ID)
+    INNER JOIN CuotaTipo 
+        ON (Cuo_CTi_ID = CTi_ID)
+    INNER JOIN CuotaAlternativa 
+        ON (Cuo_Alt_ID = Alt_ID)
+    INNER JOIN CuotaBeneficio 
+        ON (Cuo_Ben_ID = Ben_ID)
+    INNER JOIN Usuario 
+        ON (Cuo_Usu_ID = Usu_ID)
+WHERE (Cuo_Lec_ID =  AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_Numero=);
+[27-03-2023 11:18:42] ERROR: cargarFunciones.php - linea: 2309 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_N...' at line 15 - SQL: SELECT * FROM
+    CuotaPersona
+    INNER JOIN Lectivo 
+        ON (Cuo_Lec_ID = Lec_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Cuo_Niv_ID = Niv_ID)
+    INNER JOIN CuotaTipo 
+        ON (Cuo_CTi_ID = CTi_ID)
+    INNER JOIN CuotaAlternativa 
+        ON (Cuo_Alt_ID = Alt_ID)
+    INNER JOIN CuotaBeneficio 
+        ON (Cuo_Ben_ID = Ben_ID)
+    INNER JOIN Usuario 
+        ON (Cuo_Usu_ID = Usu_ID)
+WHERE (Cuo_Lec_ID =  AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_Numero=);

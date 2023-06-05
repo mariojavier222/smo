@@ -1,0 +1,57 @@
+[06-03-2023 07:23:38] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 2 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-03-06 07:23:38\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 46
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID
+[06-03-2023 07:25:45] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 2 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-03-06 07:25:45\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 47
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID
+[06-03-2023 08:24:38] ERROR: cargarFunciones.php - linea: 1308 - error: Incorrect string value: '\xD1o Riv...' for column `naptagestionar_smo`.`Usuario`.`Usu_Persona` at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'SedeÑo Riveros, Aitana Jazmin\', Usu_Email = \'elinariveros@gmail.com\' WHERE Usu_ID = \'1815\'
+[06-03-2023 08:28:03] ERROR: cargarFunciones.php - linea: 1308 - error: Incorrect string value: '\xEDa Jos...' for column `naptagestionar_smo`.`Usuario`.`Usu_Persona` at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'Gomez Wingord, María Josefina\', Usu_Email = \'Anitagomez9898@gmail.com\' WHERE Usu_ID = \'1346\'
+[06-03-2023 08:28:16] ERROR: cargarFunciones.php - linea: 1308 - error: Incorrect string value: '\xEDa Jos...' for column `naptagestionar_smo`.`Usuario`.`Usu_Persona` at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'Gomez Wingord, María Josefina\', Usu_Email = \'Anitagomez9898@gmail.com\' WHERE Usu_ID = \'1346\'
+[06-03-2023 08:58:49] ERROR: funciones_generales.php - linea: 1461 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 6 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID =  AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[06-03-2023 09:14:54] ERROR: funciones_generales.php - linea: 1461 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 6 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID =  AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[06-03-2023 09:56:12] ERROR: funciones_generales.php - linea: 1461 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 6 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID =  AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[06-03-2023 10:42:39] ERROR: cargarFunciones.php - linea: 1308 - error: Incorrect string value: '\xCDa Jos...' for column `naptagestionar_smo`.`Usuario`.`Usu_Persona` at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'Gomez Wingord, MarÍa Josefina\', Usu_Email = \'anitagomez9898@gmail.com\' WHERE Usu_ID = \'1346\'
+[06-03-2023 10:44:09] ERROR: cargarFunciones.php - linea: 1308 - error: Incorrect string value: '\xCDa Jos...' for column `naptagestionar_smo`.`Usuario`.`Usu_Persona` at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'Gomez Wingord, MarÍa Josefina\', Usu_Email = \'anitagomez9898@gmail.com\' WHERE Usu_ID = \'1346\'
+[06-03-2023 10:49:58] ERROR: cargarFunciones.php - linea: 1308 - error: Incorrect string value: '\xCDa Jos...' for column `naptagestionar_smo`.`Usuario`.`Usu_Persona` at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'Gomez Wingord, MarÍa Josefina\', Usu_Email = \'anitagomez9898@gmail.com\' WHERE Usu_ID = \'1346\'
+[06-03-2023 12:22:38] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 1 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-03-06 12:22:38\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 48
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID

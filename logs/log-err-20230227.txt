@@ -1,0 +1,19 @@
+[27-02-2023 00:45:42] ERROR: funciones_generales.php - linea: 1149 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 - SQL: SELECT
+	Con_Lec_ID
+    , Lectivo.Lec_Nombre
+    , Configuracion.Con_Uni_ID FROM
+    Configuracion
+    INNER JOIN Lectivo 
+        ON (Configuracion.Con_Lec_ID = Lectivo.Lec_ID) WHERE Con_Uni_ID = ;
+[27-02-2023 00:45:43] ERROR: funciones_generales.php - linea: 1420 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Lectivo WHERE Lec_ID = 
+[27-02-2023 12:39:52] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 1 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-02-27 12:39:52\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 40
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID

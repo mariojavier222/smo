@@ -1,0 +1,19 @@
+[28-02-2023 14:52:24] ERROR: funciones_generales.php - linea: 1439 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre' at line 6 - SQL: SELECT * FROM
+    Familia
+    INNER JOIN FamiliaTipo 
+        ON (Familia.Fam_FTi_ID = FamiliaTipo.FTi_ID)
+    INNER JOIN Persona 
+        ON (Familia.Fam_Per_ID = Persona.Per_ID) WHERE Fam_Vin_Per_ID =  AND Fam_FTi_ID = 2 ORDER BY FTi_ID, Per_Sexo DESC, Per_Apellido, Per_Nombre;
+[28-02-2023 15:59:12] ERROR: cargarFunciones.php - linea: 5901 - error: Out of range value for column 'CRe_Importe' at row 1 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2023-02-28 15:59:12\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 42
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID
+[28-02-2023 16:47:15] ERROR: funciones_generales.php - linea: 1999 - error: Unknown column 'Cuo_CTi_ID' in 'where clause' - SQL: SELECT * FROM CuotaModelo WHERE CMo_Lec_ID = 23 AND CMo_Niv_ID = 1 AND CMo_Especial=0 AND Cuo_CTi_ID=2 ORDER BY CMo_Lec_ID, CMo_Niv_ID, CMo_CTi_ID, CMo_Alt_ID, CMo_Numero
+[28-02-2023 17:21:43] ERROR: cargarFunciones.php - linea: 9069 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - SQL: DELETE FROM Bloqueo WHERE Blo_Per_ID = 

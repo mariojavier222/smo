@@ -1,0 +1,22 @@
+[15-03-2023 15:29:21] ERROR: cargarSituacionAcademicaHijo.php - linea: 100 - error: Table 'naptagestionar_smo.persona' doesn't exist - SQL: SELECT DISTINCTROW * FROM 
+	 Colegio_InscripcionClase
+    INNER JOIN Colegio_Inscripcion 
+        ON (IMa_Leg_ID = Ins_Leg_ID) AND (IMa_Lec_ID = Ins_Lec_ID)
+    INNER JOIN Colegio_Clase 
+        ON (IMa_Cla_ID = Colegio_Clase.Cla_ID)
+    INNER JOIN Legajo 
+        ON (Ins_Leg_ID = Legajo.Leg_ID)
+    INNER JOIN persona 
+        ON (Leg_Per_ID = persona.Per_ID)
+    INNER JOIN Lectivo 
+        ON (Cla_Lec_ID = lectivo.Lec_ID)
+    INNER JOIN Colegio_Materia 
+        ON (Colegio_Clase.Cla_Mat_ID = Mat_ID)
+    INNER JOIN Curso 
+        ON (Colegio_Clase.Cla_Cur_ID = Cur_ID)
+    INNER JOIN Division 
+        ON (Cla_Div_ID = Div_ID)
+	INNER JOIN Colegio_Nivel
+		ON (Ins_Niv_ID = Niv_ID)
+	WHERE Per_DNI = 56589844 
+	AND Cla_Lec_ID = 23 ORDER BY Lec_Nombre, Niv_Nombre, Cur_Nombre, Div_Nombre, Mat_Nombre;

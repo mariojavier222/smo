@@ -1,0 +1,145 @@
+[24-11-2022 09:27:28] ERROR: cargarFunciones.php - linea: 6761 - error: Incorrect decimal value: '' for column 'CMo_Recargo_Mensual' at row 1 - SQL: UPDATE CuotaModelo SET	
+	CMo_Importe = \'4700\' , 
+	CMo_Mes = \'12\' , 
+	CMo_1er_Recargo = \'500.00\',
+    CMo_2do_Recargo = \'0.00\',
+	CMo_Recargo_Mensual = \'\',
+	CMo_CantCuotas = \'1\',
+	CMo_1er_Vencimiento = \'2022-12-25\',
+    CMo_2do_Vencimiento = \'0000-00-00\',
+    CMo_3er_Vencimiento = \'0000-00-00\',
+    CMo_Numero = \'1\',
+    CMo_Agrupa = \'0\',
+    CMo_Especial = \'0\',
+    CMo_Fecha = \'2022-11-24\', 
+    CMo_Hora = \'09:27:28\', 
+    CMo_Usu_ID = \'2\'
+	WHERE
+	CMo_Lec_ID = \'21\' AND CMo_Niv_ID = \'1\' AND CMo_CTi_ID = \'2\' AND CMo_Alt_ID = \'1\' AND CMo_Numero = \'1\';
+[24-11-2022 09:31:49] ERROR: cargarFunciones.php - linea: 6761 - error: Incorrect date value: '0000-00-00' for column 'CMo_2do_Vencimiento' at row 1 - SQL: UPDATE CuotaModelo SET	
+	CMo_Importe = \'4700\' , 
+	CMo_Mes = \'12\' , 
+	CMo_1er_Recargo = \'500.00\',
+    CMo_2do_Recargo = \'0.00\',
+	CMo_Recargo_Mensual = \'500.00\',
+	CMo_CantCuotas = \'1\',
+	CMo_1er_Vencimiento = \'2022-12-25\',
+    CMo_2do_Vencimiento = \'0000-00-00\',
+    CMo_3er_Vencimiento = \'0000-00-00\',
+    CMo_Numero = \'1\',
+    CMo_Agrupa = \'0\',
+    CMo_Especial = \'0\',
+    CMo_Fecha = \'2022-11-24\', 
+    CMo_Hora = \'09:31:49\', 
+    CMo_Usu_ID = \'2\'
+	WHERE
+	CMo_Lec_ID = \'21\' AND CMo_Niv_ID = \'1\' AND CMo_CTi_ID = \'2\' AND CMo_Alt_ID = \'1\' AND CMo_Numero = \'1\';
+[24-11-2022 14:06:38] ERROR: cargarFunciones.php - linea: 6764 - error: Incorrect date value: '' for column 'CMo_2do_Vencimiento' at row 1 - SQL: UPDATE CuotaModelo SET	
+	CMo_Importe = \'4700.00\' , 
+	CMo_Mes = \'12\' , 
+	CMo_1er_Recargo = \'500.00\',
+    CMo_2do_Recargo = \'0.00\',
+	CMo_Recargo_Mensual = \'500.01\',
+	CMo_CantCuotas = \'1\',
+	CMo_1er_Vencimiento = \'2022-12-25\',
+    CMo_2do_Vencimiento = \'\',
+    CMo_3er_Vencimiento = \'\',
+    CMo_Numero = \'1\',
+    CMo_Agrupa = \'0\',
+    CMo_Especial = \'0\',
+    CMo_Fecha = \'2022-11-24\', 
+    CMo_Hora = \'14:06:38\', 
+    CMo_Usu_ID = \'2\'
+	WHERE
+	CMo_Lec_ID = \'21\' AND CMo_Niv_ID = \'1\' AND CMo_CTi_ID = \'2\' AND CMo_Alt_ID = \'1\' AND CMo_Numero = \'1\';
+[24-11-2022 14:11:07] ERROR: cargarFunciones.php - linea: 7452 - error: Incorrect integer value: '' for column 'Cuo_Niv_ID' at row 1 - SQL: INSERT INTO CuotaPersona 
+    	(Cuo_Lec_ID, 
+    	Cuo_Per_ID, 
+    	Cuo_Niv_ID,
+    	Cuo_CTi_ID, 
+    	Cuo_Alt_ID, 
+    	Cuo_Numero, 
+    	Cuo_Ben_ID, 
+    	Cuo_Usu_ID, 
+    	Cuo_Fecha, 
+    	Cuo_Hora, 
+    	Cuo_Importe, 
+    	Cuo_1er_Recargo, 
+    	Cuo_2do_Recargo, 
+    	Cuo_1er_Vencimiento, 
+    	Cuo_2do_Vencimiento, 
+    	Cuo_3er_Vencimiento, 
+    	Cuo_Mes, 
+    	Cuo_Anio, 
+    	Cuo_Pagado, 
+    	Cuo_Cancelado, 
+    	Cuo_Anulado, 
+    	Cuo_Recargo_Mensual,
+    	Cuo_ImporteOriginal,
+    	Cuo_PPa_ID
+    	)
+    	VALUES
+    	(\'21\', 
+    	\'2846\', 
+    	\'\', 
+    	\'3\', 
+    	\'1\', 
+    	\'1\', 
+    	\'1\', 
+    	\'2\', 
+    	\'2022-11-24\', 
+    	\'14:11:07\', 
+    	\'200\', 
+    	\'10\', 
+    	\'10\', 
+    	\'2022-04-10\', 
+    	\'2022-04-10\', 
+    	\'2022-04-10\', 
+    	\'11\', 
+    	\'2022\', 
+    	\'0\', 
+    	\'0\', 
+    	\'0\', 
+    	\'10\',
+    	\'200\',
+    	\'0\'
+    	);
+[24-11-2022 14:39:54] ERROR: cargarFunciones.php - linea: 9883 - error: Incorrect date value: '0000-00-00' for column 'Dat_Nacimiento' at row 1 - SQL: UPDATE PersonaDatos SET Dat_Dom_Pro_ID=\'19\', Dat_Dom_Pai_ID=\'1\', Dat_Dom_Loc_ID=\'1735\', Dat_Nac_Pro_ID=\'19\', Dat_Nac_Pai_ID=\'1\', Dat_Nac_Loc_ID=\'1735\', Dat_Nacimiento=\'0000-00-00\', Dat_Domicilio=\'a definir\', Dat_CP=\'5400\', Dat_Email=\'luismatias02@hotmail.es\', Dat_Telefono=\'\', Dat_Celular=\'11111111\', Dat_Ocupacion = \'\', Dat_Retira=\'\', Dat_Observaciones=\'\', Dat_Fecha=\'2022-11-24\', Dat_Hora=\'14:39:54\' WHERE Dat_Per_ID=\'2809\'
+[24-11-2022 14:41:21] ERROR: cargarFunciones.php - linea: 1306 - error: Incorrect string value: '\xCDas Mo...' for column 'Usu_Persona' at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'MatÕas Monta—o\', Usu_Email = \'luismatias02@hotmail.es\' WHERE Usu_ID = \'2818\'
+[24-11-2022 14:41:34] ERROR: cargarFunciones.php - linea: 1306 - error: Incorrect string value: '\xCDas Mo...' for column 'Usu_Persona' at row 1 - SQL: UPDATE Usuario SET Usu_Persona = \'MatÕas Monta—o\', Usu_Email = \'luismatias02@hotmail.es\' WHERE Usu_ID = \'2818\'
+[24-11-2022 14:50:37] ERROR: cargarFunciones.php - linea: 3550 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND Pre_Lec_ID = 23' at line 1 - SQL: SELECT * FROM RequisitoPresentado WHERE Pre_Niv_ID = -1 AND Pre_Per_ID =  AND Pre_Lec_ID = 23
+[24-11-2022 14:51:20] ERROR: cargarFunciones.php - linea: 9973 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00/00/0000'' OR Per_Apellido LIKE '%Dat_Nacimiento='00/00/0000'%') ORDER BY Per_' at line 1 - SQL: SELECT * FROM Persona INNER JOIN PersonaEstado ON (Per_Baja = PEs_ID) WHERE (Per_DNI = \'Dat_Nacimiento=\'00/00/0000\'\' OR Per_Apellido LIKE \'%Dat_Nacimiento=\'00/00/0000\'%\') ORDER BY Per_Apellido, Per_Nombre
+[24-11-2022 14:51:21] ERROR: cargarFunciones.php - linea: 9973 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00/00/0000'' OR Per_Apellido LIKE '%Dat_Nacimiento='00/00/0000'%') ORDER BY Per_' at line 1 - SQL: SELECT * FROM Persona INNER JOIN PersonaEstado ON (Per_Baja = PEs_ID) WHERE (Per_DNI = \'Dat_Nacimiento=\'00/00/0000\'\' OR Per_Apellido LIKE \'%Dat_Nacimiento=\'00/00/0000\'%\') ORDER BY Per_Apellido, Per_Nombre
+[24-11-2022 14:51:21] ERROR: cargarFunciones.php - linea: 9973 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00/00/0000'' OR Per_Apellido LIKE '%Dat_Nacimiento='00/00/0000'%') ORDER BY Per_' at line 1 - SQL: SELECT * FROM Persona INNER JOIN PersonaEstado ON (Per_Baja = PEs_ID) WHERE (Per_DNI = \'Dat_Nacimiento=\'00/00/0000\'\' OR Per_Apellido LIKE \'%Dat_Nacimiento=\'00/00/0000\'%\') ORDER BY Per_Apellido, Per_Nombre
+[24-11-2022 14:51:22] ERROR: cargarFunciones.php - linea: 9973 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00/00/0000'' OR Per_Apellido LIKE '%Dat_Nacimiento='00/00/0000'%') ORDER BY Per_' at line 1 - SQL: SELECT * FROM Persona INNER JOIN PersonaEstado ON (Per_Baja = PEs_ID) WHERE (Per_DNI = \'Dat_Nacimiento=\'00/00/0000\'\' OR Per_Apellido LIKE \'%Dat_Nacimiento=\'00/00/0000\'%\') ORDER BY Per_Apellido, Per_Nombre
+[24-11-2022 15:48:41] ERROR: mostrarFacturaImpresa.php - linea: 82 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM FacturaDetalle WHERE FDe_Fac_ID =
+[24-11-2022 16:04:01] ERROR: funciones_generales.php - linea: 2728 - error: Incorrect integer value: '' for column 'Cuo_Ben_ID' at row 1 - SQL:  UPDATE CuotaPersona SET
+    Cuo_Ben_ID = \'\',
+    Cuo_Importe= \'4700.00\'
+        WHERE
+    Cuo_Lec_ID = \'21\' AND Cuo_Per_ID = \'2521\' AND Cuo_Niv_ID = \'1\' AND Cuo_CTi_ID = \'2\' AND Cuo_Alt_ID = \'1\' AND Cuo_Numero = \'1\';
+[24-11-2022 16:06:55] ERROR: funciones_generales.php - linea: 2728 - error: Incorrect integer value: '' for column 'Cuo_Ben_ID' at row 1 - SQL:  UPDATE CuotaPersona SET
+    Cuo_Ben_ID = \'\',
+    Cuo_Importe= \'4700.00\'
+        WHERE
+    Cuo_Lec_ID = \'21\' AND Cuo_Per_ID = \'2521\' AND Cuo_Niv_ID = \'1\' AND Cuo_CTi_ID = \'2\' AND Cuo_Alt_ID = \'1\' AND Cuo_Numero = \'1\';
+[24-11-2022 16:09:55] ERROR: funciones_generales.php - linea: 2728 - error: Incorrect integer value: '' for column 'Cuo_Ben_ID' at row 1 - SQL:  UPDATE CuotaPersona SET
+    Cuo_Ben_ID = \'\',
+    Cuo_Importe= \'4700.00\'
+        WHERE
+    Cuo_Lec_ID = \'21\' AND Cuo_Per_ID = \'2521\' AND Cuo_Niv_ID = \'1\' AND Cuo_CTi_ID = \'2\' AND Cuo_Alt_ID = \'1\' AND Cuo_Numero = \'1\';
+[24-11-2022 16:11:10] ERROR: funciones_generales.php - linea: 2728 - error: Incorrect integer value: '' for column 'Cuo_Ben_ID' at row 1 - SQL:  UPDATE CuotaPersona SET
+    Cuo_Ben_ID = \'\',
+    Cuo_Importe= \'4700.00\'
+        WHERE
+    Cuo_Lec_ID = \'21\' AND Cuo_Per_ID = \'2521\' AND Cuo_Niv_ID = \'1\' AND Cuo_CTi_ID = \'2\' AND Cuo_Alt_ID = \'1\' AND Cuo_Numero = \'1\';
+[24-11-2022 16:13:16] ERROR: funciones_generales.php - linea: 2728 - error: Incorrect integer value: '' for column 'Cuo_Ben_ID' at row 1 - SQL:  UPDATE CuotaPersona SET
+    Cuo_Ben_ID = \'\',
+    Cuo_Importe= \'4700.00\'
+        WHERE
+    Cuo_Lec_ID = \'21\' AND Cuo_Per_ID = \'2521\' AND Cuo_Niv_ID = \'1\' AND Cuo_CTi_ID = \'2\' AND Cuo_Alt_ID = \'1\' AND Cuo_Numero = \'1\';
+[24-11-2022 16:13:51] ERROR: funciones_generales.php - linea: 2728 - error: Incorrect integer value: '' for column 'Cuo_Ben_ID' at row 1 - SQL:  UPDATE CuotaPersona SET
+    Cuo_Ben_ID = \'\',
+    Cuo_Importe= \'4700.00\'
+        WHERE
+    Cuo_Lec_ID = \'21\' AND Cuo_Per_ID = \'2521\' AND Cuo_Niv_ID = \'1\' AND Cuo_CTi_ID = \'2\' AND Cuo_Alt_ID = \'1\' AND Cuo_Numero = \'1\';

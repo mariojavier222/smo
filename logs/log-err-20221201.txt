@@ -1,0 +1,66 @@
+[01-12-2022 07:37:03] ERROR: cargarFunciones.php - linea: 7389 - error: Incorrect integer value: '' for column 'Cuo_Niv_ID' at row 1 - SQL: INSERT INTO CuotaPersona 
+	(Cuo_Lec_ID, 
+	Cuo_Per_ID, 
+	Cuo_Niv_ID,
+	Cuo_CTi_ID, 
+	Cuo_Alt_ID, 
+	Cuo_Numero, 
+	Cuo_Ben_ID, 
+	Cuo_Usu_ID, 
+	Cuo_Fecha, 
+	Cuo_Hora, 
+	Cuo_Importe, 
+	Cuo_1er_Recargo, 
+	Cuo_2do_Recargo, 
+	Cuo_1er_Vencimiento, 
+	Cuo_2do_Vencimiento, 
+	Cuo_3er_Vencimiento, 
+	Cuo_Mes, 
+	Cuo_Anio, 
+	Cuo_Pagado, 
+	Cuo_Cancelado, 
+	Cuo_Anulado, 
+	Cuo_Recargo_Mensual,
+	Cuo_ImporteOriginal,
+	Cuo_PPa_ID
+	)
+	VALUES
+	(\'23\', 
+	\'1976\', 
+	\'\', 
+	\'23\', 
+	\'1\', 
+	\'1\', 
+	\'1\', 
+	\'2856\', 
+	\'2022-12-01\', 
+	\'07:37:03\', 
+	\'9400\', 
+	\'0\', 
+	\'0\', 
+	\'2022-12-12\', 
+	\'2022-12-12\', 
+	\'2022-12-12\', 
+	\'12\', 
+	\'2022\', 
+	\'0\', 
+	\'0\', 
+	\'0\', 
+	\'0\',
+	\'9400\',
+	\'0\'
+	);
+[01-12-2022 08:10:48] ERROR: funciones_generales.php - linea: 2452 - error: Data too long for column 'CCo_Detalle' at row 1 - SQL: INSERT INTO CuentaCorriente (CCo_Per_ID, CCo_Concepto, CCo_Debito, CCo_Fecha, CCo_Hora, CCo_Detalle, CCo_Referencia) VALUES(454, \'Generacion de Cuota Mensual Diciembre/2022\', \'4550.00\', \'2022-12-01\', \'08:10:48\', \'Usuario que generó la cuota: superadmin Nivel: Secundaria Beneficio: SECUNDARIO 3 HERMANOS O MAS\', \'21;454;2;2;1;1\')
+[01-12-2022 08:11:08] ERROR: funciones_generales.php - linea: 2452 - error: Data too long for column 'CCo_Detalle' at row 1 - SQL: INSERT INTO CuentaCorriente (CCo_Per_ID, CCo_Concepto, CCo_Debito, CCo_Fecha, CCo_Hora, CCo_Detalle, CCo_Referencia) VALUES(454, \'Generacion de Cuota Mensual Diciembre/2022\', \'4550.00\', \'2022-12-01\', \'08:11:08\', \'Usuario que generó la cuota: superadmin Nivel: Secundaria Beneficio: SECUNDARIO 3 HERMANOS O MAS\', \'21;454;2;2;1;1\')
+[01-12-2022 11:32:53] ERROR: cargarFunciones.php - linea: 15932 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND TCo_Letra = '' AND TCo_Numero = '' AND TCo_Valor = ''' at line 1 - SQL: SELECT * FROM TarjetaCoordenadas WHERE TCo_Usu_ID= AND TCo_Letra = \'\' AND TCo_Numero = \'\' AND TCo_Valor = \'\'
+[01-12-2022 16:14:15] ERROR: guardarItemCaja.php - linea: 59 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND CPD_For_ID = 1)' at line 2 - SQL: DELETE FROM CuotaPagoDetalle
+WHERE (CPD_Lec_ID = 21 AND CPD_Per_ID = 377 AND CPD_Niv_ID = 1 AND CPD_CTi_ID=2 AND CPD_Alt_ID=1 AND CPD_Numero=1 AND CPD_Fecha = \'2022-12-01\' AND CPD_Orden =  AND CPD_For_ID = 1);
+[01-12-2022 16:14:15] ERROR: guardarItemCaja.php - linea: 66 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 2, 3, '2022-12-01', '16:14:15', '')' at line 1 - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(21, 377, 1, 2, 1, 1, , 2, 3, \'2022-12-01\', \'16:14:15\', \'\')
+[01-12-2022 16:14:16] ERROR: guardarItemCaja.php - linea: 66 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 3, 3, '2022-12-01', '16:14:15', '')' at line 1 - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(21, 377, 1, 2, 1, 1, , 3, 3, \'2022-12-01\', \'16:14:15\', \'\')
+[01-12-2022 16:14:17] ERROR: guardarItemCaja.php - linea: 71 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 1, 3, '2022-12-01', '16:14:15', '')' at line 1 - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(21, 377, 1, 2, 1, 1, , 1, 3, \'2022-12-01\', \'16:14:15\', \'\')
+[01-12-2022 16:16:08] ERROR: guardarItemCaja.php - linea: 59 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND CPD_For_ID = 1)' at line 2 - SQL: DELETE FROM CuotaPagoDetalle
+WHERE (CPD_Lec_ID = 21 AND CPD_Per_ID = 471 AND CPD_Niv_ID = 2 AND CPD_CTi_ID=2 AND CPD_Alt_ID=1 AND CPD_Numero=1 AND CPD_Fecha = \'2022-12-01\' AND CPD_Orden =  AND CPD_For_ID = 1);
+[01-12-2022 16:16:09] ERROR: guardarItemCaja.php - linea: 66 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 2, 4, '2022-12-01', '16:16:08', '')' at line 1 - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(21, 471, 2, 2, 1, 1, , 2, 4, \'2022-12-01\', \'16:16:08\', \'\')
+[01-12-2022 16:16:10] ERROR: guardarItemCaja.php - linea: 66 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 3, 4, '2022-12-01', '16:16:08', '')' at line 1 - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(21, 471, 2, 2, 1, 1, , 3, 4, \'2022-12-01\', \'16:16:08\', \'\')
+[01-12-2022 16:16:11] ERROR: guardarItemCaja.php - linea: 71 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 1, 4, '2022-12-01', '16:16:08', '')' at line 1 - SQL: INSERT INTO CuotaPagoDetalle (CPD_Lec_ID, CPD_Per_ID, CPD_Niv_ID, CPD_CTi_ID, CPD_Alt_ID, CPD_Numero, CPD_Orden, CPD_FDe_ID, CPD_For_ID, CPD_Fecha, CPD_Hora, CPD_Valor) VALUES(21, 471, 2, 2, 1, 1, , 1, 4, \'2022-12-01\', \'16:16:08\', \'\')
+[01-12-2022 16:35:53] ERROR: imprimirCajaCorriente.php - linea: 13 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Caja INNER JOIN Usuario ON (Caja_Usu_ID = Usu_ID) WHERE Caja_ID = 

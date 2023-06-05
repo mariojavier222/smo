@@ -1,0 +1,1 @@
+[20-03-2023 13:16:05] ERROR: imprimirCajaCorriente.php - linea: 13 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Caja INNER JOIN Usuario ON (Caja_Usu_ID = Usu_ID) WHERE Caja_ID = 

@@ -1,0 +1,11 @@
+[21-12-2022 15:29:37] ERROR: cargarFunciones.php - linea: 5892 - error: Out of range value for column 'CRe_Importe' at row 46 - SQL: INSERT INTO CajaRendida (CRe_Caja_ID,CRe_Usu_ID,CRe_For_ID,CRe_Importe,CRe_Fecha_Rendida)
+SELECT
+  CCC_Caja_ID,
+  CCC_Usu_ID,
+  CCC_For_ID,
+  SUM(CCC_Credito) - SUM(CCC_Debito), \'2022-12-21 15:29:37\'
+FROM CajaCorriente
+WHERE CCC_Caja_ID = 22
+GROUP BY CCC_Caja_ID,
+     CCC_Usu_ID,
+     CCC_For_ID

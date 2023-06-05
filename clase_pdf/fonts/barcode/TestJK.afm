@@ -1,0 +1,26 @@
+StartFontMetrics 2.0
+Comment Copyright (C) 2000 Jan Karrman. All rights reserved.
+Comment Creation Date: Thu Feb 15 08:49:59 2001
+Comment UniqueID 4123456
+Comment VMusage 8481 4753
+FontName TestJK
+FullName Test JK
+FamilyName Test JK
+FontBBox 0 0 330 800
+Version 001.000
+Notice Copyright (C) 2000 Jan Karrman. All rights reserved.
+EncodingScheme FontSpecific
+UnderlinePosition 0
+UnderlineThickness 0
+ItalicAngle 0
+IsFixedPitch false
+StartCharMetrics 7
+C 32 ; WX 780 ; N space ; B 0 0 330 800 ;
+C 34 ; WX 780 ; N quotedbl ; B 0 0 330 800 ;
+C 39 ; WX 780 ; N quoteright ; B 0 0 330 800 ;
+C 48 ; WX 780 ; N zero ; B 0 0 330 800 ;
+C 96 ; WX 780 ; N quoteleft ; B 0 0 330 800 ;
+C 124 ; WX 780 ; N bar ; B 0 0 330 800 ;
+C 126 ; WX 780 ; N asciitilde ; B 0 0 330 800 ;
+EndCharMetrics
+EndFontMetrics

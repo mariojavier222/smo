@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Novedades</title>
+<link href="css/general.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<p>1) Actualizar tabla Colegio_Dimension y otras<br />
+</p>
+<p>2) Crear los 3 menúes<br />
+  Cargar Dimensiones -&gt; cargarDimension<br />
+  Cargar ámbitos -&gt; cargarAmbito<br />
+  Cargar Informe -&gt; cargarInformeAmbito
+</p>
+<p>3) Crear CREATE TABLE Colegio_InscripcionClase (<br />
+IMa_Leg_ID INT(4) NOT NULL,<br />
+IMa_Lec_ID SMALLINT(2) UNSIGNED NOT NULL,<br />
+IMa_Cla_ID INTEGER(4) UNSIGNED NOT NULL,<br />
+IMa_Usu_ID SMALLINT(2) UNSIGNED NOT NULL,<br />
+IMa_Fecha DATE NOT NULL,<br />
+IMa_Hora TIME NULL,<br />
+PRIMARY KEY(IMa_Leg_ID, IMa_Lec_ID, IMa_Cla_ID),<br />
+INDEX Colegio_InscripcionMateria_FKIndex1(IMa_Leg_ID, IMa_Lec_ID),<br />
+INDEX Colegio_InscripcionMateria_FKIndex2(IMa_Usu_ID),<br />
+INDEX Colegio_InscripcionMateria_FKIndex3(IMa_Cla_ID)<br />
+)<br />
+TYPE=InnoDB;</p>
+<p>4) Arreglar BuscarDatos, no está bien las condiciones del WHERE</p>
+<p class="cuota_pagada">&nbsp;</p>
+<p class="corregirLista">&nbsp;</p>
+</body>
+</html>

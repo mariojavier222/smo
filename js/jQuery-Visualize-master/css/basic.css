@@ -1,0 +1,10 @@
+/* page styles */
+.tablaEstadistica { font-family: "Segoe UI", Frutiger,Tahoma,Helvetica,"Helvetica Neue", Arial, sans-serif; }
+.tablaEstadistica table {  border-collapse: collapse; }
+.tablaEstadistica td, .tablaEstadistica th { 
+   text-align: center; 
+   border: 1px solid #ddd; 
+   padding:2px 5px; 
+   }
+   
+.tablaEstadistica caption {margin: 0 0 .5em; font-weight: bold; }

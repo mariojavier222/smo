@@ -1,0 +1,58 @@
+[14-02-2023 08:40:59] ERROR: imprimirCajaCorrienteRecibos.php - linea: 101 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'napta_smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+        ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 30 ORDER BY CCC_ID
+[14-02-2023 08:40:59] ERROR: imprimirCajaCorrienteRecibos.php - linea: 120 - error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'napta_smo.FacturaDetalle.FDe_Item' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM FacturaDetalle
+    INNER JOIN Factura 
+        ON (FDe_Fac_ID = Fac_ID)
+    INNER JOIN FacturaTipo 
+        ON (Fac_FTi_ID = FTi_ID)  
+    INNER JOIN CuotaPago 
+        ON (FDe_Fac_ID = CuP_Fac_ID) AND (FDe_Item = CuP_FDe_Item)
+    INNER JOIN Caja 
+        ON (CuP_Caja_ID = Caja_ID)
+    INNER JOIN Persona 
+        ON (Per_ID = CuP_Per_ID) WHERE Caja_ID=30 GROUP BY Fac_ID;
+[14-02-2023 08:41:26] ERROR: imprimirCajaCorrienteRecibos.php - linea: 101 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'napta_smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+        ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 30 ORDER BY CCC_ID
+[14-02-2023 08:41:26] ERROR: imprimirCajaCorrienteRecibos.php - linea: 120 - error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'napta_smo.FacturaDetalle.FDe_Item' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM FacturaDetalle
+    INNER JOIN Factura 
+        ON (FDe_Fac_ID = Fac_ID)
+    INNER JOIN FacturaTipo 
+        ON (Fac_FTi_ID = FTi_ID)  
+    INNER JOIN CuotaPago 
+        ON (FDe_Fac_ID = CuP_Fac_ID) AND (FDe_Item = CuP_FDe_Item)
+    INNER JOIN Caja 
+        ON (CuP_Caja_ID = Caja_ID)
+    INNER JOIN Persona 
+        ON (Per_ID = CuP_Per_ID) WHERE Caja_ID=30 GROUP BY Fac_ID;
+[14-02-2023 08:41:48] ERROR: imprimirCajaCorriente.php - linea: 92 - error: Expression #1 of ORDER BY clause is not in SELECT list, references column 'napta_smo.CajaCorriente.CCC_ID' which is not in SELECT list; this is incompatible with DISTINCT - SQL: SELECT DISTINCTROW For_ID, For_Nombre  FROM CajaCorriente INNER JOIN FormaPago 
+	ON (CCC_For_ID = For_ID) WHERE CCC_Caja_ID = 30 ORDER BY CCC_ID
+[14-02-2023 08:58:30] ERROR: ListarFactura.php - linea: 104 - error: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'napta_smo.FacturaDetalle.FDe_Item' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT * FROM
+    FacturaDetalle
+    INNER JOIN Factura 
+        ON (FDe_Fac_ID = Fac_ID)
+    INNER JOIN FacturaTipo 
+        ON (Fac_FTi_ID = FTi_ID)  
+    INNER JOIN CuotaPago 
+        ON (FDe_Fac_ID = CuP_Fac_ID) AND (FDe_Item = CuP_FDe_Item)
+    INNER JOIN Caja 
+        ON (CuP_Caja_ID = Caja_ID)
+    INNER JOIN Persona 
+        ON (Per_ID = CuP_Per_ID) WHERE Caja_ID=30 GROUP BY Fac_ID ORDER BY Fac_ID;
+[14-02-2023 11:07:10] ERROR: cargarFunciones.php - linea: 6707 - error: Incorrect date value: '0000-00-00' for column 'CMo_2do_Vencimiento' at row 1 - SQL: UPDATE CuotaModelo SET	
+	CMo_Importe = \'9400.00\' , 
+	CMo_Mes = \'12\' , 
+	CMo_1er_Recargo = \'1900.00\',
+    CMo_2do_Recargo = \'0.00\',
+	CMo_Recargo_Mensual = \'1000.00\',
+	CMo_CantCuotas = \'1\',
+	CMo_1er_Vencimiento = \'2022-12-09\',
+    CMo_2do_Vencimiento = \'0000-00-00\',
+    CMo_3er_Vencimiento = \'0000-00-00\',
+    CMo_Numero = \'1\',
+    CMo_Agrupa = \'0\',
+    CMo_Especial = \'0\',
+    CMo_Fecha = \'2023-02-14\', 
+    CMo_Hora = \'11:07:10\', 
+    CMo_Usu_ID = \'2856\'
+	WHERE
+	CMo_Lec_ID = \'23\' AND CMo_Niv_ID = \'1\' AND CMo_CTi_ID = \'23\' AND CMo_Alt_ID = \'1\' AND CMo_Numero = \'1\';

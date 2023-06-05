@@ -1,0 +1,2 @@
+[25-02-2023 17:23:00] ERROR: test-db.php - linea: 12 - error: Table 'napta_smo.Opcionee' doesn't exist - SQL: SELECT * FROM Opcionee 
+[25-02-2023 17:23:00] ERROR: test-db.php - linea: 12 - error: Table 'napta_smo.Opcionee' doesn't exist - SQL: SELECT * FROM Opcionee 

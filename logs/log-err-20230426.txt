@@ -1,0 +1,27 @@
+[26-04-2023 08:24:59] ERROR: cargarFunciones.php - linea: 2309 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_N...' at line 15 - SQL: SELECT * FROM
+    CuotaPersona
+    INNER JOIN Lectivo 
+        ON (Cuo_Lec_ID = Lec_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Cuo_Niv_ID = Niv_ID)
+    INNER JOIN CuotaTipo 
+        ON (Cuo_CTi_ID = CTi_ID)
+    INNER JOIN CuotaAlternativa 
+        ON (Cuo_Alt_ID = Alt_ID)
+    INNER JOIN CuotaBeneficio 
+        ON (Cuo_Ben_ID = Ben_ID)
+    INNER JOIN Usuario 
+        ON (Cuo_Usu_ID = Usu_ID)
+WHERE (Cuo_Lec_ID =  AND Cuo_Per_ID =  AND Cuo_Niv_ID =  AND Cuo_CTi_ID= AND Cuo_Alt_ID= AND Cuo_Numero=);
+[26-04-2023 21:45:03] ERROR: cargarFunciones.php - linea: 4218 - error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Colegio_Clase WHERE Cla_ID = 
+[26-04-2023 21:49:44] ERROR: cargarFunciones.php - linea: 3857 - error: Incorrect string value: '\xCDSICA' for column `naptagestionar_smo`.`Colegio_Materia`.`Mat_Nombre` at row 1 - SQL: UPDATE Colegio_Materia SET Mat_Nombre = \'EDUCACION FÍSICA\', Mat_Siglas = \'EDU.FIS.\', Mat_Ori_ID = \'5\', Mat_Convivencia = \'0\', Mat_Curricular = \'0\' WHERE Mat_ID = 333
+[26-04-2023 23:04:02] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 249
+[26-04-2023 23:05:02] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 249
+[26-04-2023 23:05:14] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 240
+[26-04-2023 23:07:59] ERROR: cargarFunciones.php - linea: 3758 - error: Cannot add or update a child row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Docente`, CONSTRAINT `colegio_docente_ibfk_1` FOREIGN KEY (`Doc_Per_ID`) REFERENCES `Persona` (`Per_ID`)) - SQL: INSERT INTO Colegio_Docente (Doc_Per_ID, Doc_Legajo, Doc_Alta, Doc_Activo, Doc_Fecha, Doc_Hora) VALUES (\'0\', \'10\', \'2023-04-26\', \'1\', \'2023-04-26\', \'23:07:59\')
+[26-04-2023 23:10:59] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 233
+[26-04-2023 23:14:26] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 237
+[26-04-2023 23:14:37] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 247
+[26-04-2023 23:15:15] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 267
+[26-04-2023 23:15:22] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 277
+[26-04-2023 23:23:52] ERROR: cargarFunciones.php - linea: 3885 - error: Cannot delete or update a parent row: a foreign key constraint fails (`naptagestionar_smo`.`Colegio_Clase`, CONSTRAINT `colegio_clase_ibfk_2` FOREIGN KEY (`Cla_Mat_ID`) REFERENCES `Colegio_Materia` (`Mat_ID`)) - SQL: DELETE FROM Colegio_Materia WHERE Mat_ID = 269

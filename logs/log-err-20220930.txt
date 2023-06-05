@@ -1,0 +1,37 @@
+[30-09-2022 18:13:21] ERROR: cargarFuncionesDivision.php - linea: 42 - error: Column count doesn't match value count at row 1 - SQL: INSERT INTO division_curso (
+        DC_ID,
+        DC_Div_ID,
+        DC_Cur_ID,
+        DC_Lec_ID) VALUES (
+        \'1\',
+        \'4\',
+        \'23\'
+        )
+[30-09-2022 18:22:06] ERROR: cargarFuncionesDivision.php - linea: 41 - error: Duplicate entry '1-4-21' for key 'DC_Div_ID' - SQL: INSERT INTO division_curso (
+            DC_Div_ID, 
+            DC_Cur_ID, 
+            DC_Lec_ID) 
+        VALUES (
+            \'1\', 
+            \'4\', 
+            \'21\')
+[30-09-2022 19:02:35] ERROR: cargarFuncionesDivision.php - linea: 53 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DC_ID' (this will throw an Error in a future version of PHP) in <b>/home/naptage' at line 5 - SQL: SELECT * FROM Colegio_Inscripcion 
+    INNER JOIN division_curso ON 
+    (Colegio_Inscripcion.Ins_Div_ID = division_curso.DC_Div_ID) AND 
+    (Colegio_Inscripcion.Ins_Cur_ID = division_curso.DC_Cur_ID) AND 
+    (Colegio_Inscripcion.Ins_Lec_ID = division_curso.DC_Lec_ID) AND division_curso.DC_ID=\'<br />
+<b>Warning</b>:  Use of undefined constant DC_ID - assumed \'DC_ID\' (this will throw an Error in a future version of PHP) in <b>/home/naptagestion-com-smo/htdocs/smo.naptagestion.com.ar/cargarFuncionesDivision.php</b> on line <b>157</b><br />
+33\';
+[30-09-2022 19:02:36] ERROR: cargarFuncionesDivision.php - linea: 58 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DC_ID' (this will throw an Error in a future version of PHP) in <b>/home/naptage' at line 1 - SQL: DELETE FROM division_curso WHERE DC_ID=\'<br />
+<b>Warning</b>:  Use of undefined constant DC_ID - assumed \'DC_ID\' (this will throw an Error in a future version of PHP) in <b>/home/naptagestion-com-smo/htdocs/smo.naptagestion.com.ar/cargarFuncionesDivision.php</b> on line <b>157</b><br />
+33\';
+[30-09-2022 19:35:02] ERROR: guardarLegajo.php - linea: 25 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Legajo WHERE Leg_Per_ID = 
+[30-09-2022 19:35:02] ERROR: guardarLegajo.php - linea: 57 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' '55495717', '2022-09-30', '2', '2022-09-30', '19:35:02', '1')' at line 1 - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio) VALUES (1, , \'55495717\', \'2022-09-30\', \'2\', \'2022-09-30\', \'19:35:02\', \'1\')
+[30-09-2022 19:35:03] ERROR: guardarLegajo.php - linea: 61 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Legajo WHERE Leg_Per_ID = 
+[30-09-2022 19:35:04] ERROR: cargarFunciones.php - linea: 2419 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Legajo WHERE Leg_Per_ID = 
+[30-09-2022 19:38:00] ERROR: guardarLegajo.php - linea: 25 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Legajo WHERE Leg_Per_ID = 
+[30-09-2022 19:38:01] ERROR: guardarLegajo.php - linea: 57 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' '55495717', '2022-09-30', '2', '2022-09-30', '19:38:00', '1')' at line 1 - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio) VALUES (1, , \'55495717\', \'2022-09-30\', \'2\', \'2022-09-30\', \'19:38:00\', \'1\')
+[30-09-2022 19:38:01] ERROR: guardarLegajo.php - linea: 61 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Legajo WHERE Leg_Per_ID = 
+[30-09-2022 19:39:04] ERROR: guardarLegajo.php - linea: 25 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Legajo WHERE Leg_Per_ID = 
+[30-09-2022 19:39:05] ERROR: guardarLegajo.php - linea: 57 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' '55495717', '2022-09-30', '2', '2022-09-30', '19:39:04', '1')' at line 1 - SQL: INSERT INTO Legajo(Leg_Sed_ID, Leg_Per_ID, Leg_Numero, Leg_Alta_Fecha, Leg_Usu_ID, Leg_Fecha, Leg_Hora, Leg_Colegio) VALUES (1, , \'55495717\', \'2022-09-30\', \'2\', \'2022-09-30\', \'19:39:04\', \'1\')
+[30-09-2022 19:39:05] ERROR: guardarLegajo.php - linea: 61 - error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - SQL: SELECT * FROM Legajo WHERE Leg_Per_ID = 

@@ -1,0 +1,46 @@
+[06-01-2023 15:28:45] ERROR: mostrarListadoDeudoresLectivo-andrea.php - linea: 48 - error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'napta_smo.Colegio_Inscripcion.Ins_Leg_ID' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT 	* FROM
+    Colegio_Inscripcion
+    INNER JOIN Legajo 
+        ON (Colegio_Inscripcion.Ins_Leg_ID = Legajo.Leg_ID)
+    INNER JOIN Persona 
+        ON (Legajo.Leg_Per_ID = Persona.Per_ID)
+    INNER JOIN Curso 
+        ON (Colegio_Inscripcion.Ins_Cur_ID = Curso.Cur_ID)
+    INNER JOIN Division 
+        ON (Colegio_Inscripcion.Ins_Div_ID = Division.Div_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Colegio_Inscripcion.Ins_Niv_ID = Colegio_Nivel.Niv_ID)
+    INNER JOIN CuotaPersona
+        ON (Persona.Per_ID = CuotaPersona.Cuo_Per_ID)
+WHERE (Colegio_Inscripcion.Ins_Lec_ID = 20 AND 
+	Ins_Div_ID>0  AND 
+	Leg_Sed_ID = 1 AND 
+	Per_Baja = 0 AND 
+	Leg_Baja = 0 AND
+	Cuo_Pagado = 0 AND 
+	Cuo_Cancelado = 0 AND 
+	Cuo_Anulado = 0 AND 
+	(Cuo_1er_Vencimiento >= \'2000-01-01\' AND Cuo_1er_Vencimiento <= \'2021-12-31\') AND Colegio_Inscripcion.Ins_Niv_ID = 1 ) GROUP BY Per_ID ORDER BY Niv_ID, Cur_ID, Div_ID, Persona.Per_Sexo, Per_Apellido, Per_Nombre;
+[06-01-2023 15:28:54] ERROR: mostrarListadoDeudoresLectivo-andrea.php - linea: 48 - error: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'napta_smo.Colegio_Inscripcion.Ins_Leg_ID' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - SQL: SELECT 	* FROM
+    Colegio_Inscripcion
+    INNER JOIN Legajo 
+        ON (Colegio_Inscripcion.Ins_Leg_ID = Legajo.Leg_ID)
+    INNER JOIN Persona 
+        ON (Legajo.Leg_Per_ID = Persona.Per_ID)
+    INNER JOIN Curso 
+        ON (Colegio_Inscripcion.Ins_Cur_ID = Curso.Cur_ID)
+    INNER JOIN Division 
+        ON (Colegio_Inscripcion.Ins_Div_ID = Division.Div_ID)
+    INNER JOIN Colegio_Nivel 
+        ON (Colegio_Inscripcion.Ins_Niv_ID = Colegio_Nivel.Niv_ID)
+    INNER JOIN CuotaPersona
+        ON (Persona.Per_ID = CuotaPersona.Cuo_Per_ID)
+WHERE (Colegio_Inscripcion.Ins_Lec_ID = 20 AND 
+	Ins_Div_ID>0  AND 
+	Leg_Sed_ID = 1 AND 
+	Per_Baja = 0 AND 
+	Leg_Baja = 0 AND
+	Cuo_Pagado = 0 AND 
+	Cuo_Cancelado = 0 AND 
+	Cuo_Anulado = 0 AND 
+	(Cuo_1er_Vencimiento >= \'2000-01-01\' AND Cuo_1er_Vencimiento <= \'2021-12-31\')) GROUP BY Per_ID ORDER BY Niv_ID, Cur_ID, Div_ID, Persona.Per_Sexo, Per_Apellido, Per_Nombre;
