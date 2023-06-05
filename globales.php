@@ -7,10 +7,10 @@ $gNombreSesion = md5(uniqid(rand()));
 $gIndex = "index2.php";
 
 
-$gSQL_host="localhost";
-$gSQL_usuario="naptagestionar_smo";        // Usuario de Mysql
-$gSQL_pass="Marios2022!";           // contrase a de Mysql
-$gSQL_db="naptagestionar_smo";     // Base de datos que se usará en producción.*/
+$gSQL_host = "localhost";
+$gSQL_usuario = "napta"; // Usuario de Mysql
+$gSQL_pass = "napta"; // contrase a de Mysql
+$gSQL_db = "smo"; // Base de datos que se usará en producción.*/
 
 //para test
 //$gSQL_db_test="napta_smo_test";     // Base de datos que se usará para test.*/
